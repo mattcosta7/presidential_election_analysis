@@ -7,6 +7,8 @@ export default class Detail extends React.Component {
     const popRep = this.props.election.results.popular.actual.republican;
     const popDem = this.props.election.results.popular.actual.democrat;
     const actualResults = this.props.election.results.electoral.actual;
+    const actualElectoralDem = this.props.election.results.electoral.actual.democrat;
+    const actualElectoralRep = this.props.election.results.electoral.actual.republican;
     const propWithThird = this.props.election.results.electoral.proportionalWithThirdParty;
     const propWithoutThird = this.props.election.results.electoral.proportionalWithoutThirdParty;
     const repCandidate = this.props.election.candidates.republican;
@@ -16,7 +18,11 @@ export default class Detail extends React.Component {
     return (
       <div className="row">
         <h2 className="text-xs-center"> { year } </h2>
-        <h3>{ demCandidate } (D) vs { repCandidate } (R)</h3>
+        <h3>
+          <span className={actualElectoralDem >= 270 ? 'underline' : ''}>{ demCandidate } (D)</span>
+          vs
+          <span className={actualElectoralRep >= 270 ? 'underline' : ''}>{ repCandidate } (R)</span>
+        </h3>
         <div className="row">
           <SubDetail results={actualResults} header={'Actual'}/>
         </div>

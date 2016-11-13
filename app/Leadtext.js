@@ -80,9 +80,6 @@ export default class LeadText extends React.Component {
               <p  className="list-group-text">
                 One version of this scenario allocates votes without considering 3 parties, while the other allocates also to 3rd party candidates
               </p>
-              <p  className="list-group-text">
-                One version of this scenario allocates votes without considering 3 parties, while the other allocates also to 3rd party candidates
-              </p>
             </li>
           </ul>
         </div>
