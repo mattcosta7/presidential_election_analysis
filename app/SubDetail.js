@@ -7,7 +7,7 @@ export default class SubDetail extends React.Component {
   }
   render() {
     return (
-      <div className="col-sm-4">
+      <div className="col-sm-6">
         <ul>
           <h3>{this.props.header}</h3>
           <li className={
@@ -26,3 +26,8 @@ export default class SubDetail extends React.Component {
     );
   }
 }
+
+SubDetail.propTypes = {
+  header: React.PropTypes.string,
+  results: React.PropTypes.object
+};

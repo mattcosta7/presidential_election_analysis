@@ -16,19 +16,23 @@ export default class Detail extends React.Component {
     return (
       <div className="row">
         <h2 className="text-xs-center"> { year } </h2>
+        <h3>{ demCandidate } (D) vs { repCandidate } (R)</h3>
+        <div className="row">
+          <SubDetail results={actualResults} header={'Actual'}/>
+        </div>
         <div className="text-cs-center">
           <div className="list-group">
             <div className={'list-group-item ' + (popDem > popRep ? 'winner' : '')}>
-              <h5 className="list-group-item-heading">{demCandidate}</h5>
+              <h5 className="list-group-item-heading">{ demCandidate } (D)</h5>
               <p className="list-group-item-text">{popDem.toLocaleString()}</p>
             </div>
             <div className={'list-group-item ' + (popRep > popDem ? 'winner' : '')}>
-              <h5 className="list-group-item-heading"> { repCandidate } </h5>
+              <h5 className="list-group-item-heading"> { repCandidate } (R) </h5>
               <p className="list-group-item-text">{popRep.toLocaleString()}</p>
             </div>
           </div>
         </div>
-        <SubDetail results={actualResults} header={'Actual'}/>
+
         <SubDetail results={propWithoutThird} header={'Proportional'}/>
         <SubDetail results={propWithThird} header={'Proportional (3rd)'}/>
         <SubDetail results={withElectoralBonus} header={'Electoral Bonus'}/>
@@ -37,3 +41,6 @@ export default class Detail extends React.Component {
     );
   }
 }
+Detail.propTypes = {
+  election: React.PropTypes.object
+};
