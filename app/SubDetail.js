@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default class SubDetail extends React.Component{
+export default class SubDetail extends React.Component {
 
-  isWinner(votes){
-    return votes >= 270 ? "winner" : "";
+  isWinner(votes) {
+    return votes >= 270 ? 'winner' : '';
   }
-  render(){
-    return(
-      <div className='col-sm-4'>
+  render() {
+    return (
+      <div className="col-sm-4">
         <ul>
           <h3>{this.props.header}</h3>
           <li className={
@@ -23,6 +23,6 @@ export default class SubDetail extends React.Component{
           }> Others: {this.props.results.others}</li>
         </ul>
       </div>
-    )
+    );
   }
 }

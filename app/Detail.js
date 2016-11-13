@@ -14,17 +14,17 @@ export default class Detail extends React.Component {
     const withElectoralBonus3rd = this.props.election.results.electoral.withElectoralBonus3rd;
     const withElectoralBonus = this.props.election.results.electoral.withElectoralBonus;
     return (
-      <div className='row'>
-        <h2 className='text-xs-center'> { year } </h2>
-        <div className='text-cs-center'>
-          <div className='list-group'>
+      <div className="row">
+        <h2 className="text-xs-center"> { year } </h2>
+        <div className="text-cs-center">
+          <div className="list-group">
             <div className={'list-group-item ' + (popDem > popRep ? 'winner' : '')}>
-              <h5 className='list-group-item-heading'>{demCandidate}</h5>
-              <p className='list-group-item-text'>{popDem.toLocaleString()}</p>
+              <h5 className="list-group-item-heading">{demCandidate}</h5>
+              <p className="list-group-item-text">{popDem.toLocaleString()}</p>
             </div>
             <div className={'list-group-item ' + (popRep > popDem ? 'winner' : '')}>
-              <h5 className='list-group-item-heading'> { repCandidate } </h5>
-              <p className='list-group-item-text'>{popRep.toLocaleString()}</p>
+              <h5 className="list-group-item-heading"> { repCandidate } </h5>
+              <p className="list-group-item-text">{popRep.toLocaleString()}</p>
             </div>
           </div>
         </div>
