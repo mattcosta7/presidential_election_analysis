@@ -24,7 +24,7 @@
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint .",
     "jscs": "jscs .",
-    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "deploy-demo": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "babel-cli": "^6.4.0",
