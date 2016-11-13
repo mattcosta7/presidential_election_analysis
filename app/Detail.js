@@ -1,18 +1,19 @@
 import React from 'react';
 import SubDetail from './SubDetail';
 
-export default class Detail extends React.Component{
-  render(){
+export default class Detail extends React.Component {
+  render() {
     const year = this.props.election.year;
     const popRep = this.props.election.results.popular.actual.republican;
     const popDem = this.props.election.results.popular.actual.democrat;
-    const actual_results = this.props.election.results.electoral.actual;
+    const actualResults = this.props.election.results.electoral.actual;
     const propWithThird = this.props.election.results.electoral.proportionalWithThirdParty;
     const propWithoutThird = this.props.election.results.electoral.proportionalWithoutThirdParty;
     const repCandidate = this.props.election.candidates.republican;
     const demCandidate = this.props.election.candidates.democrat;
-
-    return(
+    const withElectoralBonus3rd = this.props.election.results.electoral.withElectoralBonus3rd;
+    const withElectoralBonus = this.props.election.results.electoral.withElectoralBonus;
+    return (
       <div className='row'>
         <h2 className='text-xs-center'> { year } </h2>
         <div className='text-cs-center'>
@@ -27,10 +28,12 @@ export default class Detail extends React.Component{
             </div>
           </div>
         </div>
-        <SubDetail results={actual_results} header={'Actual'}/>
-        <SubDetail results={propWithThird} header={'Prop, With 3rd Party'}/>
-        <SubDetail results={propWithoutThird} header={'Prop, Without 3rd Party'}/>
+        <SubDetail results={actualResults} header={'Actual'}/>
+        <SubDetail results={propWithoutThird} header={'Proportional'}/>
+        <SubDetail results={propWithThird} header={'Proportional (3rd)'}/>
+        <SubDetail results={withElectoralBonus} header={'Electoral Bonus'}/>
+        <SubDetail results={withElectoralBonus3rd} header={'Electoral Bonus (3rd)'}/>
       </div>
-    )
+    );
   }
 }

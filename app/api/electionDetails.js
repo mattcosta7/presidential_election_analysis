@@ -1,155 +1,128 @@
-import electionData from 'presidential-election-data';
-import data2016 from './2016.json';
-let myData = electionData;
-myData['2016'] = data2016;
+import Data from './dataCombiner';
 
 export default class ElectionData {
 
-  static getDataNeat(){
-    let data = {};
-    for (var year in myData){
-      if(year >= 1992){
+  static getDataNeat() {
+    const data = {};
+    for (const year in Data) {
+      if (year >= 1964) {
         data[year] = [];
-        const rep_candidate = myData[year]["candidates"]["republican"];
-        const dem_candidate = myData[year]["candidates"]["democrat"];
-        data[year]["candidates"] = {
-          republican: rep_candidate,
-          democrat: dem_candidate
+        const repCandidate = Data[year].candidates.republican;
+        const demCandidate = Data[year].candidates.democrat;
+        data[year].candidates = {
+          republican: repCandidate,
+          democrat: demCandidate
         };
-        data[year]['votes'] = [];
-        for(var state in myData[year]['votes']){
-          const item = myData[year]['votes'][state];
-          const popular_democrat = parseFloat(item['popular']['democrat']);
-          const popular_republican = parseFloat(item['popular']['republican']);
-          const popular_other = parseFloat(item['popular']['other']);
-          const electoral_democrat = parseFloat(item['electoral']['democrat']);
-          const electoral_republican = parseFloat(item['electoral']['republican']);
-          const total_popular_votes = parseFloat(popular_democrat + popular_republican);
-          const total_popular_votes_3rd = total_popular_votes + popular_other;
-          const total_electoral = parseFloat(electoral_democrat + electoral_republican);
-          const percent_popular_dem = parseFloat(popular_democrat / total_popular_votes);
-          const percent_popular_rep = parseFloat(popular_republican / total_popular_votes);
-          const percent_popular_others = parseFloat(popular_other / total_popular_votes_3rd);
-          const percent_popular_dem3rd = parseFloat(popular_democrat / total_popular_votes_3rd);
-          const percent_popular_rep3rd = parseFloat(popular_republican / total_popular_votes_3rd);
-          data[year]["votes"].push({
-            state: state,
-            results: {
-              electoral_democrat: electoral_democrat,
-              electoral_republican: electoral_republican,
-              electoral_vote_total: total_electoral,
-              electoral_others: 0,
-              popular_total_no_3rd: total_popular_votes,
-              popular_total_3rd: total_popular_votes + popular_other,
-              popular_democrat: popular_democrat,
-              popular_republican: popular_republican,
-              electoral_dem_should_have: Math.round(total_electoral * percent_popular_dem),
-              electoral_rep_should_have: Math.round(total_electoral * percent_popular_rep),
-              others_should_have: Math.round(total_electoral * percent_popular_others),
-              electoral_dem_should_have3rd: Math.round(total_electoral * percent_popular_dem3rd),
-              electoral_rep_should_have3rd: Math.round(total_electoral * percent_popular_rep3rd),
-            },
-          });
+        data[year].votes = [];
+        for (const state in Data[year].votes) {
+          if (Data[year].votes.hasOwnProperty(state)) {
+            const item = Data[year].votes[state];
+            const popularDemocrat = parseFloat(item.popular.democrat);
+            const popularRepublican = parseFloat(item.popular.republican);
+            const popularOther = parseFloat(item.popular.other);
+            const electoralDemocrat = parseFloat(item.electoral.democrat);
+            const electoralRepublican = parseFloat(item.electoral.republican);
+            const totalPopularVotes = parseFloat(popularDemocrat + popularRepublican);
+            const totalPopularVotes3rd = totalPopularVotes + popularOther;
+            const totalElectoral = parseFloat(electoralDemocrat + electoralRepublican);
+            const percentPopularDems = parseFloat(popularDemocrat / totalPopularVotes);
+            const percentPopularReps = parseFloat(popularRepublican / totalPopularVotes);
+            const percentPopularOther = parseFloat(popularOther / totalPopularVotes3rd);
+            const percentPopularDemThird = parseFloat(popularDemocrat / totalPopularVotes3rd);
+            const percentPopularRepThird = parseFloat(popularRepublican / totalPopularVotes3rd);
+            const electoralDemsShouldHave = Math.round(totalElectoral * percentPopularDems);
+            const electoralRepsShouldHave = Math.round(totalElectoral * percentPopularReps);
+            const othersShouldHave = Math.round(totalElectoral * percentPopularOther);
+            const electoralDemsShouldHave3rd = Math.round(totalElectoral * percentPopularDemThird);
+            const electoralRepsShouldHave3rd = Math.round(totalElectoral * percentPopularRepThird);
+            const othersWithBonus = Math.round((totalElectoral - 2) * percentPopularOther);
+            const demsWithBonus3rd = Math.round((totalElectoral - 2) * percentPopularDemThird) + (percentPopularDemThird > percentPopularRepThird ? 2 : 0);
+            const repsWithBonus3rd = Math.round((totalElectoral - 2) * percentPopularRepThird) + (percentPopularDemThird < percentPopularRepThird ? 2 : 0);
+            const demsWithBonus = Math.round((totalElectoral - 2) * percentPopularDems) + (percentPopularDems > percentPopularReps ? 2 : 0);
+            const repsWithBonus = Math.round((totalElectoral - 2) * percentPopularReps) + (percentPopularDems < percentPopularReps ? 2 : 0);
+            data[year].votes.push({
+              state: state,
+              results: {
+                electoralDemocrat: electoralDemocrat,
+                electoralRepublican: electoralRepublican,
+                electoralVoteTotal: totalElectoral,
+                electoralOthers: 0,
+                popularTotalNo3rd: totalPopularVotes,
+                popularTotal3rd: totalPopularVotes + popularOther,
+                popularDemocrat: popularDemocrat,
+                popularRepublican: popularRepublican,
+                electoralDemsShouldHave: electoralDemsShouldHave,
+                electoralRepsShouldHave: electoralRepsShouldHave,
+                othersShouldHave: othersShouldHave,
+                electoralDemsShouldHave3rd: electoralDemsShouldHave3rd,
+                electoralRepsShouldHave3rd: electoralRepsShouldHave3rd,
+                othersWithBonus: othersWithBonus,
+                demsWithBonus3rd: demsWithBonus3rd,
+                repsWithBonus3rd: repsWithBonus3rd,
+                demsWithBonus: demsWithBonus,
+                repsWithBonus: repsWithBonus
+              },
+            });
+          }
         }
       }
     }
     return data;
   }
 
-  static getDetails(){
+  static getCount(votes, field) {
+    return votes.map(function countIt(state) {
+      return state.results[field];
+    }).reduce(function sum(a, b) {
+      return a + b;
+    });
+  }
+
+  static getDetails() {
     const data = this.getDataNeat();
-    const myData = Object.keys(data).map(function(year){
-      const rep_candidate = data[year]['candidates']['republican'];
-      const dem_candidate = data[year]['candidates']['democrat'];
-      const national_electoral_democrat = data[year]['votes'].map(function(item){
-        return item['results']['electoral_democrat'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-      const national_electoral_republican = data[year]['votes'].map(function(item){
-        return item['results']['electoral_republican'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-      const national_electoral_dem_should_have =   data[year]['votes'].map(function(item){
-        return item['results']['electoral_dem_should_have'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-      const national_electoral_rep_should_have = data[year]['votes'].map(function(item){
-        return item['results']['electoral_rep_should_have'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-      const national_electoral_others = data[year]['votes'].map(function(item){
-        return item['results']['electoral_others'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-      const national_electoral_others_should_have = data[year]['votes'].map(function(item){
-        return item['results']['others_should_have'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-
-      const national_electoral_dem_should_have3rd = data[year]['votes'].map(function(item){
-        return item['results']['electoral_dem_should_have3rd'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-      const national_electoral_rep_should_have3rd = data[year]['votes'].map(function(item){
-        return item['results']['electoral_rep_should_have3rd'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-
-      const national_popular_republic = data[year]['votes'].map(function(item){
-        return item['results']['popular_republican'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-
-      const national_popular_democrat = data[year]['votes'].map(function(item){
-        return item['results']['popular_democrat'];
-      }).reduce(function(a,b){
-        return a+b;
-      });
-
+    return Object.keys(data).map(function getYear(year) {
       return {
         year: year,
         candidates: {
-          republican: rep_candidate,
-          democrat: dem_candidate,
-
+          republican: data[year].candidates.republican,
+          democrat: data[year].candidates.democrat
         },
         results: {
           popular: {
             actual: {
-              democrat: national_popular_democrat,
-              republican: national_popular_republic
+              democrat: ElectionData.getCount(data[year].votes, 'popularDemocrat'),
+              republican: ElectionData.getCount(data[year].votes, 'popularRepublican')
             }
           },
           electoral: {
             actual: {
-              democrat: national_electoral_democrat,
-              republican: national_electoral_republican,
-              others: national_electoral_others
+              democrat: ElectionData.getCount(data[year].votes, 'electoralDemocrat'),
+              republican: ElectionData.getCount(data[year].votes, 'electoralRepublican'),
+              others: ElectionData.getCount(data[year].votes, 'electoralOthers')
             },
-            proportionalWithThirdParty:{
-              democrat: national_electoral_dem_should_have3rd,
-              republican: national_electoral_rep_should_have3rd,
-              others: national_electoral_others_should_have
+            proportionalWithThirdParty: {
+              democrat: ElectionData.getCount(data[year].votes, 'electoralDemsShouldHave3rd'),
+              republican: ElectionData.getCount(data[year].votes, 'electoralRepsShouldHave3rd'),
+              others: ElectionData.getCount(data[year].votes, 'othersShouldHave')
             },
-            proportionalWithoutThirdParty:{
-              democrat: national_electoral_dem_should_have,
-              republican: national_electoral_rep_should_have,
+            proportionalWithoutThirdParty: {
+              democrat: ElectionData.getCount(data[year].votes, 'electoralDemsShouldHave'),
+              republican: ElectionData.getCount(data[year].votes, 'electoralRepsShouldHave'),
+              others: 0
+            },
+            withElectoralBonus3rd: {
+              democrat: ElectionData.getCount(data[year].votes, 'demsWithBonus3rd'),
+              republican: ElectionData.getCount(data[year].votes, 'repsWithBonus3rd'),
+              others: ElectionData.getCount(data[year].votes, 'othersWithBonus')
+            },
+            withElectoralBonus: {
+              democrat: ElectionData.getCount(data[year].votes, 'demsWithBonus'),
+              republican: ElectionData.getCount(data[year].votes, 'repsWithBonus'),
               others: 0
             }
           }
-
         }
       };
     });
-    return myData;
   }
 }
