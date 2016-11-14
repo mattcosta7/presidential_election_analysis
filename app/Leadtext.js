@@ -87,6 +87,14 @@ export default class LeadText extends React.Component {
           Analysis
         </h3>
         <p>
+          Electoral college inefficiencies have created a scenario where, counter to its initial goal, equalized representation has not been maintained, but instead limited. Generally, during the period from 1964 through today (the period where the number of electoral votes has been 538), most election have given an unbalanced portion of electoral votes to the winner, limiting the voies of the losers supporters tremendously.
+        </p>
+        <h4>1964</h4>
+        <p>
+          Lyndon Johnson ran against Barry Goldwater, in a race that was not very close at all. Johnson managed to muster 486 electoral votes, more than 90%, yet only managed to win, just over 60% of the popular vote that year.
+        </p>
+        <p>
+          In each scenario, this election has the same outcome, LBJ easily defeats Goldwater, but in much closer races, that more accurately respresent the sentiments of the country at the time.
         </p>
         <h3>
           Conclusion

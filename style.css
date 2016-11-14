@@ -1,0 +1,17 @@
+.winner{
+  background-color: #ffea58;
+}
+ul{
+  padding-left: 0;
+  list-style-type: none;
+}
+.jumbotron-fluid{
+  padding: 20px;
+  background-color: #f7f7f9;
+}
+.container{
+  margin-top: 50px;
+}
+.underline{
+  text-decoration: underline
+}
