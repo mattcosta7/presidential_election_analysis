@@ -78,6 +78,13 @@ export default class ElectionData {
     });
   }
 
+  static getByYear(year) {
+    const data = this.getDetails();
+    return data.filter(function yeara(obj) {
+      return obj.year === year;
+    })[0];
+  }
+
   static getDetails() {
     const data = this.getDataNeat();
     return Object.keys(data).map(function getYear(year) {

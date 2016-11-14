@@ -23,8 +23,11 @@ export default class Detail extends React.Component {
           vs
           <span className={actualElectoralRep >= 270 ? 'underline' : ''}>{ repCandidate } (R)</span>
         </h3>
+        <h4> </h4>
         <div className="row">
           <SubDetail results={actualResults} header={'Actual'}/>
+        </div>
+        <div>
         </div>
         <div className="text-cs-center">
           <div className="list-group">
@@ -38,7 +41,6 @@ export default class Detail extends React.Component {
             </div>
           </div>
         </div>
-
         <SubDetail results={propWithoutThird} header={'Proportional'}/>
         <SubDetail results={propWithThird} header={'Proportional (3rd)'}/>
         <SubDetail results={withElectoralBonus} header={'Electoral Bonus'}/>
