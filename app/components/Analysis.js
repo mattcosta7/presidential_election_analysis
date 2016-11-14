@@ -8,3 +8,5 @@ export default class Analysis extends React.Component {
     );
   }
 }
+
+Analysis.propTypes = {};

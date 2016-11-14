@@ -8,3 +8,5 @@ export default class Conclusion extends React.Component {
     );
   }
 }
+
+Conclusion.propTypes = {};

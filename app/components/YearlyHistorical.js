@@ -8,3 +8,5 @@ export default class YearlyHistorical extends React.Component {
     );
   }
 }
+
+YearlyHistorical.propTypes = {};

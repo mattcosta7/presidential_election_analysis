@@ -8,3 +8,5 @@ export default class YearlyResult extends React.Component {
     );
   }
 }
+
+YearlyResult.propTypes = {};

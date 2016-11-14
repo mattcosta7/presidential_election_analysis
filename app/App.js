@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Problem from './components/Problem';
+import Hypothesis from './components/Hypothesis';
 import Histry from './components/Histry';
 import Analysis from './components/Analysis';
 import Conclusion from './components/Conclusion';
@@ -17,6 +18,7 @@ export default class App extends React.Component {
         <Navbar />
         <Header />
         <Problem />
+        <Hypothesis />
         <Histry />
         <Analysis />
         <Conclusion />
