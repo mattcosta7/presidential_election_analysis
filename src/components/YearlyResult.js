@@ -4,7 +4,8 @@ export default class YearlyResult extends React.Component {
   render() {
     return (
       <div>
-        {this.props.electionYear}
+        <h3>{this.props.electionYear}</h3>
+        <h4>{this.props.candidates.democrat} (D) vs {this.props.candidates.republican} (R)</h4>
         {this.props.children}
       </div>
     );
@@ -13,5 +14,6 @@ export default class YearlyResult extends React.Component {
 
 YearlyResult.propTypes = {
   electionYear: React.PropTypes.string,
-  children: React.PropTypes.array
+  children: React.PropTypes.array,
+  candidates: React.PropTypes.object
 };

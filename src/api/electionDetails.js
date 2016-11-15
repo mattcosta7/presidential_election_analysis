@@ -30,27 +30,28 @@ export default class ElectionData {
             const percentPopularOther = parseFloat(popularOther / totalPopularVotes3rd);
             const percentPopularDemThird = parseFloat(popularDemocrat / totalPopularVotes3rd);
             const percentPopularRepThird = parseFloat(popularRepublican / totalPopularVotes3rd);
-            const electoralDemsShouldHave = Math.round(totalElectoral * percentPopularDems);
-            const electoralRepsShouldHave = Math.round(totalElectoral * percentPopularReps);
-            const othersShouldHave = Math.round(totalElectoral * percentPopularOther);
-            const electoralDemsShouldHave3rd = Math.round(totalElectoral * percentPopularDemThird);
-            const electoralRepsShouldHave3rd = Math.round(totalElectoral * percentPopularRepThird);
-            const othersWithBonus = Math.round((totalElectoral - 2) * percentPopularOther);
-            const demsWithBonus3rd = Math.round((totalElectoral - 2) * percentPopularDemThird) + (percentPopularDemThird > percentPopularRepThird ? 2 : 0);
-            const repsWithBonus3rd = Math.round((totalElectoral - 2) * percentPopularRepThird) + (percentPopularDemThird < percentPopularRepThird ? 2 : 0);
-            const demsWithBonus = Math.round((totalElectoral - 2) * percentPopularDems) + (percentPopularDems > percentPopularReps ? 2 : 0);
-            const repsWithBonus = Math.round((totalElectoral - 2) * percentPopularReps) + (percentPopularDems < percentPopularReps ? 2 : 0);
+            const electoralDemsShouldHave = totalElectoral * percentPopularDems;
+            const electoralRepsShouldHave = totalElectoral * percentPopularReps;
+            const othersShouldHave = totalElectoral * percentPopularOther;
+            const electoralDemsShouldHave3rd = totalElectoral * percentPopularDemThird;
+            const electoralRepsShouldHave3rd = totalElectoral * percentPopularRepThird;
+            const othersWithBonus = (totalElectoral - 2) * percentPopularOther;
+            const demsWithBonus3rd = ((totalElectoral - 2) * percentPopularDemThird) + (percentPopularDemThird > percentPopularRepThird ? 2 : 0);
+            const repsWithBonus3rd = ((totalElectoral - 2) * percentPopularRepThird) + (percentPopularDemThird < percentPopularRepThird ? 2 : 0);
+            const demsWithBonus = ((totalElectoral - 2) * percentPopularDems) + (percentPopularDems > percentPopularReps ? 2 : 0);
+            const repsWithBonus = ((totalElectoral - 2) * percentPopularReps) + (percentPopularDems < percentPopularReps ? 2 : 0);
             data[year].votes.push({
               state: state,
               results: {
                 electoralDemocrat: electoralDemocrat,
                 electoralRepublican: electoralRepublican,
                 electoralVoteTotal: totalElectoral,
-                electoralOthers: 0,
+                electoralOther: 0,
                 popularTotalNo3rd: totalPopularVotes,
                 popularTotal3rd: totalPopularVotes + popularOther,
                 popularDemocrat: popularDemocrat,
                 popularRepublican: popularRepublican,
+                popularOther: popularOther,
                 electoralDemsShouldHave: electoralDemsShouldHave,
                 electoralRepsShouldHave: electoralRepsShouldHave,
                 othersShouldHave: othersShouldHave,
@@ -98,14 +99,15 @@ export default class ElectionData {
           popular: {
             actual: {
               democrat: ElectionData.getCount(data[year].votes, 'popularDemocrat'),
-              republican: ElectionData.getCount(data[year].votes, 'popularRepublican')
+              republican: ElectionData.getCount(data[year].votes, 'popularRepublican'),
+              others: ElectionData.getCount(data[year].votes, 'popularOther')
             }
           },
           electoral: {
             actual: {
               democrat: ElectionData.getCount(data[year].votes, 'electoralDemocrat'),
               republican: ElectionData.getCount(data[year].votes, 'electoralRepublican'),
-              others: ElectionData.getCount(data[year].votes, 'electoralOthers')
+              others: ElectionData.getCount(data[year].votes, 'electoralOther')
             },
             proportionalWithThirdParty: {
               democrat: ElectionData.getCount(data[year].votes, 'electoralDemsShouldHave3rd'),
