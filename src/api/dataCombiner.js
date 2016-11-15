@@ -1,12 +1,12 @@
 import electionData from 'presidential-election-data'; // gets data from 1992 through 2012
-import data2016 from '../../json/2016.json';
-import data1964 from '../../json/1964.json';
-import data1968 from '../../json/1968.json';
-import data1972 from '../../json/1972.json';
-import data1976 from '../../json/1976.json';
-import data1980 from '../../json/1980.json';
-import data1984 from '../../json/1984.json';
-import data1988 from '../../json/1988.json';
+import data2016 from '../json/2016.json';
+import data1964 from '../json/1964.json';
+import data1968 from '../json/1968.json';
+import data1972 from '../json/1972.json';
+import data1976 from '../json/1976.json';
+import data1980 from '../json/1980.json';
+import data1984 from '../json/1984.json';
+import data1988 from '../json/1988.json';
 
 const myData = electionData;
 myData['1964'] = data1964;
