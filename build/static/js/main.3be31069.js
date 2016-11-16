@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/presidential_election_analysis/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -11413,6 +11413,140 @@
 	  }
 	
 	  _createClass(Analysis, [{
+	    key: 'getDeviationDeviation',
+	    value: function getDeviationDeviation(data) {
+	      var actual = [];
+	      var proportionalWithThirdParty = [];
+	      var proportionalWithoutThirdParty = [];
+	      var withElectoralBonus = [];
+	      var withElectoralBonus3rd = [];
+	      data.forEach(function mapElectionToYears(election) {
+	        var results = election.results;
+	        var popular = results.popular;
+	        var electoral = results.electoral;
+	        actual.push(getDeviation(popular.actual, electoral.actual));
+	        proportionalWithThirdParty.push(getDeviation(popular.actual, electoral.proportionalWithThirdParty));
+	        proportionalWithoutThirdParty.push(getDeviation(popular.actual, electoral.proportionalWithoutThirdParty));
+	        withElectoralBonus.push(getDeviation(popular.actual, electoral.withElectoralBonus));
+	        withElectoralBonus3rd.push(getDeviation(popular.actual, electoral.withElectoralBonus3rd));
+	      });
+	      var actualAvg = getAvg(actual);
+	      var prop3rdAvg = getAvg(proportionalWithThirdParty);
+	      var propAvg = getAvg(proportionalWithoutThirdParty);
+	      var bonusAvg = getAvg(withElectoralBonus);
+	      var bonus3rdAvg = getAvg(withElectoralBonus3rd);
+	
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Historical Deviation Trends'
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'list-group' },
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            actualAvg,
+	            ': Historical Average Electoral Deviation: '
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            prop3rdAvg,
+	            ': 3rd Party Full Proportional'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            propAvg,
+	            ': 2 Party Full Proportional'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            bonusAvg,
+	            ': 2 Party Electoral Bonus'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'list-group-item' },
+	            bonus3rdAvg,
+	            ': 3rd Party Electoral Bonus'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Historically, the deviation between the popular vote and the electoral vote allocations is approximately 25%, a pretty significant shift, and an unfair representation of the sentiments of American voters. Utilizing any of the allocations I\'ve described instead, the deviation is minimized, up to almost 25%. This creates results in both votes, that follow eachother\'s trends, rather than painting vastly different canvases of the american sentiments, especially in areas with a closer distribution of votes between parties.'
+	        )
+	      );
+	      function getDeviation(popularVote, electoralVote) {
+	        var winner = electoralVote.republican >= 270 ? 'republican' : 'democrat';
+	        var totalPopularVote = popularVote.democrat + popularVote.republican + popularVote.others;
+	        var totalElectoralVote = 538;
+	        var winningPopVoteTotal = popularVote[winner];
+	        var winningElecVoteTotal = electoralVote.democrat > electoralVote.republican ? electoralVote.democrat : electoralVote.republican;
+	        var winningElectoralPrct = winningElecVoteTotal / totalElectoralVote * 100;
+	        var winningPopVotePrct = winningPopVoteTotal / totalPopularVote * 100;
+	        var diff = winningElectoralPrct - winningPopVotePrct;
+	        var pctElectoralGreater = diff / winningElectoralPrct * 100;
+	        return pctElectoralGreater;
+	      }
+	
+	      function getAvg(arr) {
+	        return Math.abs(arr.reduce(function sum(a, b) {
+	          return a + b;
+	        }) / arr.length).toFixed(2);
+	      }
+	    }
+	  }, {
+	    key: 'getAnalysis',
+	    value: function getAnalysis(data) {
+	      return data.map(function mapElectionToYears(election) {
+	        return _react2.default.createElement(
+	          _YearlyResult2.default,
+	          { key: election.year,
+	            electionYear: election.year,
+	            candidates: election.candidates
+	          },
+	          _react2.default.createElement(_YearlyHistorical2.default, { electoralVote: election.results.electoral.actual,
+	            popularVote: election.results.popular.actual,
+	            candidates: election.candidates
+	          }),
+	          _react2.default.createElement(_YearlyAnalysis2.default, { year: election.year,
+	            commentary: _electionCommentary2.default.getCommentary(election.year, "historical")
+	          }),
+	          _react2.default.createElement(_YearlyRevisionist2.default, {
+	            header: '3rd Party Full Proportional',
+	            electoralVote: election.results.electoral.proportionalWithThirdParty,
+	            popularVote: election.results.popular.actual
+	          }),
+	          _react2.default.createElement(_YearlyRevisionist2.default, {
+	            header: '2 Party Full Proportional',
+	            electoralVote: election.results.electoral.proportionalWithoutThirdParty,
+	            popularVote: election.results.popular.actual
+	          }),
+	          _react2.default.createElement(_YearlyRevisionist2.default, {
+	            header: '3rd Party Electoral Bonus',
+	            electoralVote: election.results.electoral.withElectoralBonus3rd,
+	            popularVote: election.results.popular.actual
+	          }),
+	          _react2.default.createElement(_YearlyRevisionist2.default, {
+	            header: '2 Party Electoral Bonus',
+	            electoralVote: election.results.electoral.withElectoralBonus,
+	            popularVote: election.results.popular.actual
+	          }),
+	          _react2.default.createElement(_YearlyAnalysis2.default, { year: election.year,
+	            commentary: _electionCommentary2.default.getCommentary(election.year, "revisionist")
+	          })
+	        );
+	      });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var data = _electionDetails2.default.getDetails();
@@ -11424,45 +11558,8 @@
 	          null,
 	          ' Analysis and Data '
 	        ),
-	        data.map(function mapElectionToYears(election) {
-	          return _react2.default.createElement(
-	            _YearlyResult2.default,
-	            { key: election.year,
-	              electionYear: election.year,
-	              candidates: election.candidates
-	            },
-	            _react2.default.createElement(_YearlyHistorical2.default, { electoralVote: election.results.electoral.actual,
-	              popularVote: election.results.popular.actual,
-	              candidates: election.candidates
-	            }),
-	            _react2.default.createElement(_YearlyAnalysis2.default, { year: election.year,
-	              commentary: _electionCommentary2.default.getCommentary(election.year, "historical")
-	            }),
-	            _react2.default.createElement(_YearlyRevisionist2.default, {
-	              header: '3rd Party Full Proportional',
-	              electoralVote: election.results.electoral.proportionalWithThirdParty,
-	              popularVote: election.results.popular.actual
-	            }),
-	            _react2.default.createElement(_YearlyRevisionist2.default, {
-	              header: '2 Party Full Proportional',
-	              electoralVote: election.results.electoral.proportionalWithoutThirdParty,
-	              popularVote: election.results.popular.actual
-	            }),
-	            _react2.default.createElement(_YearlyRevisionist2.default, {
-	              header: '3rd Party Electoral Bonus',
-	              electoralVote: election.results.electoral.withElectoralBonus3rd,
-	              popularVote: election.results.popular.actual
-	            }),
-	            _react2.default.createElement(_YearlyRevisionist2.default, {
-	              header: '2 Party Electoral Bonus',
-	              electoralVote: election.results.electoral.withElectoralBonus,
-	              popularVote: election.results.popular.actual
-	            }),
-	            _react2.default.createElement(_YearlyAnalysis2.default, { year: election.year,
-	              commentary: _electionCommentary2.default.getCommentary(election.year, "revisionist")
-	            })
-	          );
-	        })
+	        this.getAnalysis(data),
+	        this.getDeviationDeviation(data)
 	      );
 	    }
 	  }]);
@@ -11511,7 +11608,30 @@
 	  _createClass(Conclusion, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', null);
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Conclusion'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'By allocating 100% of a state\'s electoral votes to the winning candidate, and even rewarding the winner with only a few additional votes compared to the popular vote outcome in the state, the electoral system vastly overvalues certain votes, and the results do not accurately represent the will of the people.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'In Addition to giving more weight to proper sentiments, when voters are split, these methods each help to add value to votes as they are cast, since each additional vote in any state could have a much larger impact. Voters in states that traditionally vote in a specific party manner, often express anguish and feelings that show lack of engagement and empowerment.  Likewise, third parties are also somewhat veered away from, because this comes across as "Throwing out my vote". By more directly affecting the results in each state, these sentiments are assuaged.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'By utilzing any voting method that more directly relates electoral votes to popular ones, state\'s maintain their more equal footing when voting for president, votes are not over/under-valued as easily, voters have enhanced feelings of enfranchisment, results are not markedly different, in almost all cases, and the deviations from sentiments are minimized - the process more directly reflects the will of the people, on a national and state-by-state level.'
+	        )
+	      );
 	    }
 	  }]);
 	
@@ -46848,7 +46968,7 @@
 	
 	var ReactComponentTreeHook;
 	
-	if (typeof process !== 'undefined' && ({"NODE_ENV":"production","PUBLIC_URL":""}) && ("production") === 'test') {
+	if (typeof process !== 'undefined' && ({"NODE_ENV":"production","PUBLIC_URL":"/presidential_election_analysis"}) && ("production") === 'test') {
 	  // Temporary hack.
 	  // Inline requires don't work well with Jest:
 	  // https://github.com/facebook/react/issues/7240
@@ -53796,7 +53916,7 @@
 	
 	var ReactComponentTreeHook;
 	
-	if (typeof process !== 'undefined' && ({"NODE_ENV":"production","PUBLIC_URL":""}) && ("production") === 'test') {
+	if (typeof process !== 'undefined' && ({"NODE_ENV":"production","PUBLIC_URL":"/presidential_election_analysis"}) && ("production") === 'test') {
 	  // Temporary hack.
 	  // Inline requires don't work well with Jest:
 	  // https://github.com/facebook/react/issues/7240
@@ -54035,7 +54155,7 @@
 	
 	var ReactComponentTreeHook;
 	
-	if (typeof process !== 'undefined' && ({"NODE_ENV":"production","PUBLIC_URL":""}) && ("production") === 'test') {
+	if (typeof process !== 'undefined' && ({"NODE_ENV":"production","PUBLIC_URL":"/presidential_election_analysis"}) && ("production") === 'test') {
 	  // Temporary hack.
 	  // Inline requires don't work well with Jest:
 	  // https://github.com/facebook/react/issues/7240
@@ -54937,4 +55057,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=main.0bd0af6f.js.map
+//# sourceMappingURL=main.3be31069.js.map
