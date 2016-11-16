@@ -1,44 +1,142 @@
 {
   "1964": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "In 1964, Lyndon Johnson ran away with the election with a wopping 486 electoral votes (more than 90%). Despite this overwhelming majority of electoral representation, less than 2 out of 3 americans actually voted for him on election day. This outpaces his popular representation by over 30%."
+      },
+      "revisionist": {
+        "body": "Using a more proportional allocation of votes, the deviations between the electoral vote and popular vote become much more narrow. In his best showing he garners just over 350 electoral votes, or 65%, whereas in his 'worst' using these methods, just under 60%. These very closesly pace his popular vote percent, and much more accurately represent the voters feelings, as expressed at the polls."
+      }
+    }
   },
   "1968": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "The Nixon-Humphrey race in 1968 was much closer, with less than 600,000 votes separating the two candidates. Nixon won with almost 56% of the electoral votes, while just squeaking out a win in the popular vote with 50.4%. This separates the two votes by almost 10%!"
+      },
+      "revisionist": {
+        "body": "In none of the other scenarios does either candidate garner enough votes in the electoral college to be elected president. It's likely that the allocation of votes from a third party candidate to one of these two might have contributed to a win, but it's unknown as to which direction they would have gone, especially in the states that voted, strongly for 3rd party candidate, George Wallace (46 Electoral Votes, and over 9,000,000 popular). In each model, Nixon still maintains a lead, but his vote counts more more closely mirror eachother in distribution, in both scenarios that include the 3rd party results in the proportion of electoral votes. In a full proportional 2 party vote, the gap closes slightly, while in a 2 party spread, with a winner bonus of 2 votes per state, the gap widens to 14%."
+      }
+    }
   },
   "1972": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "In 1972, the incumbent, Nixon ran against McGovern and handily defeated him at both levels. He received more than 62% of the popular vote, but almost 97% of the electoral votes, a 36% increase!"
+      },
+      "revisionist": {
+        "body": "In each scenario, vote allocations much more closely trend eachother, with a 3rd party proportional spread allocating just about 61% of the votes in both counts, while a 2 party spread just slightly outside that.  Both elections have spreads near 11% in the winner-bonus scenarios."
+      }
+    }
   },
   "1976": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "Jimmy Carter beat out Ford in 1976 with just over 51% of the popular vote, and 55% of the electoral votes (a 7% spread)."
+      },
+      "revisionist": {
+        "body": "In every scenario, the spread is extremely limited, but when split to include 3rd parties, doesn't allocate enough votes to either of the main candidates for election. In the best scenario, spreading the votes proportionally between the parties, only .04% separate the 2 results, with no allocation more than 2% off."
+      }
+    }
   },
   "1980": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "In 1980, an unpopular Jimmy Carter was overwhelmingly elected president with 489 electoral votes, despite garnering only 55.3 percent of the popular votes. That's almost 40% more electoral votes than popular."
+      },
+      "revisionist": {
+        "body": "In each scenario, the 40% difference is closed tremendously, with a 3 party proportional spread once again closing the gap to .04%.  In no new scenarios is Carter re-elected, but in each, Reagan is elected with a more reasonable vote allocation, of at most 61%, a much more modest spread."
+      }
+    }
   },
   "1984": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "In '84, Reagan once again was elected, besting his previous Electoral score, with 525 votes. This time he received more than 59% of the popular vote, but almost 98% of the electoral votes."
+      },
+      "revisionist": {
+        "body": "Reagan's electoral totals come back to reality when spread using a more proportional methodology, with the best scenario less than half a percent off from the 'ideal' spread - where electoral votes trend the popular.  In cases where a winning bonus is allocated, the almost 40% vote spread drops to just around 11%"
+      }
+    }
   },
   "1988": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "In '88, George HW Bush walked away with the presidency, collecting 426 electoral votes, almost 80% of them. When you look at the popular votes, the story is much less clear, given that he didn't even collect 54% of the votes cast."
+      },
+      "revisionist": {
+        "body": "The numbers close significantly in every reallocation of electoral votes. In the best spread for Bush, he achieves about 8% more electoral votes than popular ones (comparatively), whereas the most even distribution he only deviates from the ideal by .55%."
+      }
+    }
   },
   "1992": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "Bill Clinton carried the election, amassing a 370 electoral vote total, almost 69%.  He, however, barely won the popular vote, with under 52% of them."
+      },
+      "revisionist": {
+        "body": "Third parties acheived a huge number of votes, and including them in the allocation process manages to allocate 75-95 electoral votes to them, rather than the 2 main candidates. Doing so does not manage to elect someone directly, a stark difference from the 370 vote total Clinton achieved. In one scenario (2 party only, proportional), the election flips (which isn't ideal, given that the popular vote was not for Bush)."
+      }
+    }
   },
   "1996": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "Clinton repeated his dominant electoral college performance in 96 against Bob Dole.  This time he won almost 55% of the popular vote, but over 70% of the electoral vote, an increase of more than 22%."
+      },
+      "revisionist": {
+        "body": "In most scenarios, the same outcome exists, but the gap is narrowed by a lot.  In a 3 party split, Clinton is just under 2 votes shy of presidency, while in a 2 party split with a bonus, he wins with 56% of the electoral votes, a gap half that of the actual result"
+      }
+    }
   },
   "2000": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "In the 2000 election, Al Gore managed to win the popular vote by an incredibly close margin of ~140k votes. He lost the presidency, though as George W Bush won 271 of the electoral votes. Many recounts later, these numbers stood. The spread here was prety close, with only 1.3% less popular votes than electoral going to Bush."
+      },
+      "revisionist": {
+        "body": "In only 1 scenario is a presidency confirmed, where Bush receives slightly more electoral votes than he may have deserved (2 party spread, with bonus). In most, the results appear 'too close to call', but separate by even less in a full 3 party spread."
+      }
+    }
   },
   "2004": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "Bush maintained his position, over John Kerry in 2004, this time managing to even win the popular vote, by ~3 million.  He took +53% of the electoral votes, and +51% of the electoral. Only a ~3.6% spread."
+      },
+      "revisionist": {
+        "body": "In these scenarios, the results are pretty close to the actual result, although there's a more amicable spead in both of the allocations that include 3rd parties."
+      }
+    }
   },
   "2008": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "In 2008, Barack Obama became president, accumulating almost 54% of the popular vote, but more than 67% of the electoral vote. This totaled almost 21% more than his popular total."
+      },
+      "revisionist": {
+        "body": "In each scenario there's a much more reasonable spread of, at worst, 2.6%, and at best only .46% between the two vote types."
+      }
+    }
   },
   "2012": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "Obama maintained his presidency accumulating almost 62% of the electoral votes, almost 16% more than his modest popular vote numbers, of 52%."
+      },
+      "revisionist": {
+        "body": "Once again, each scenario ends with the same outcome, but spread more reasonaly, with less than 2% difference in any scenario."
+      }
+    }
   },
   "2016": {
-    "commentary": "TEST commentary"
+    "commentary": {
+      "historical": {
+        "body": "In a close election, Donald Trump defeated Hilary Clinton with 306 electoral votes, to her 232. Trump, however, did not win the popular vote, with just under 50%, and 280k less votes. This is over 12% more electoral votes than popular ones"
+      },
+      "revisionist": {
+        "body": "In both 2 party scenarios, the gap between candidates is narrowed to under 7%, without a bonus, the election shifts to Clinton, with a bonus it is more closely still Trump. In both 3 party splits, neither candidate manages a 270 vote total, and 3rd parties pick up over 20 votes themselves."
+      }
+    }
   }
 }

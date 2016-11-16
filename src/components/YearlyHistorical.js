@@ -93,5 +93,5 @@ YearlyHistorical.propTypes = {
     republican: React.PropTypes.number,
     others: React.PropTypes.number
   }),
-  children: React.PropTypes.string
+  children: React.PropTypes.object
 };

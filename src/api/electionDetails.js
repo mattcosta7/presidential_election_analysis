@@ -46,7 +46,7 @@ export default class ElectionData {
                 electoralDemocrat: electoralDemocrat,
                 electoralRepublican: electoralRepublican,
                 electoralVoteTotal: totalElectoral,
-                electoralOther: 0,
+                // electoralOther: 538.0 - electoralDemocrat - electoralRepublican,
                 popularTotalNo3rd: totalPopularVotes,
                 popularTotal3rd: totalPopularVotes + popularOther,
                 popularDemocrat: popularDemocrat,
@@ -89,6 +89,9 @@ export default class ElectionData {
   static getDetails() {
     const data = this.getDataNeat();
     return Object.keys(data).map(function getYear(year) {
+      const electoralDemocrat = ElectionData.getCount(data[year].votes, 'electoralDemocrat');
+      const electoralRepublican = ElectionData.getCount(data[year].votes, 'electoralRepublican')
+      const electoralOther = 538 - electoralDemocrat - electoralRepublican;
       return {
         year: year,
         candidates: {
@@ -105,9 +108,9 @@ export default class ElectionData {
           },
           electoral: {
             actual: {
-              democrat: ElectionData.getCount(data[year].votes, 'electoralDemocrat'),
-              republican: ElectionData.getCount(data[year].votes, 'electoralRepublican'),
-              others: ElectionData.getCount(data[year].votes, 'electoralOther')
+              democrat: electoralDemocrat,
+              republican: electoralRepublican,
+              others:  electoralOther
             },
             proportionalWithThirdParty: {
               democrat: ElectionData.getCount(data[year].votes, 'electoralDemsShouldHave3rd'),

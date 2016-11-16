@@ -3,7 +3,7 @@ import React from 'react';
 export default class YearlyResult extends React.Component {
   render() {
     return (
-      <div>
+      <div className='container-fluid'>
         <h3>{this.props.electionYear}</h3>
         <h4>{this.props.candidates.democrat} (D) vs {this.props.candidates.republican} (R)</h4>
         {this.props.children}

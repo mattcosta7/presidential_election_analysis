@@ -22,14 +22,14 @@ export default class YearlyRevisionist extends React.Component {
           Winning % Popular: {winningPopVotePrct.toFixed(2)}
         </div>
         <div>
-          {pctElectoralGreater.toFixed(2)}
+          Winning Deviation from ideal: {Math.abs(pctElectoralGreater).toFixed(2)}
         </div>
       </div>
     );
   }
   render() {
     return (
-      <div className="col-xs-6">
+      <div className="col-sm-6 col-lg-3">
         <h4>{this.props.header}</h4>
         <h5>Electoral Vote</h5>
         <div>
