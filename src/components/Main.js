@@ -4,12 +4,15 @@ import Hypothesis from './Hypothesis';
 import Histry from './Histry';
 import Analysis from './Analysis';
 import Conclusion from './Conclusion';
-
+import Synopsis from './Synopsis';
+import Assumptions from './Assumptions'
 export default class Main extends React.Component {
   render() {
     return (
-      <main>
+      <main className="container">
+        <Synopsis />
         <Problem />
+        <Assumptions />
         <Hypothesis />
         <Histry />
         <Analysis />

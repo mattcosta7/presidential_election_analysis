@@ -1,12 +1,12 @@
-import Commentary from './commentary.json';
+import Commentary from '../json/commentary.json';
 
 export default class ElectionCommentary {
-  static getCommentary(id = null, type = null) {
-    switch (id) {
+  static getCommentary(year = null, type = null) {
+    switch (year) {
     case null:
       return Commentary;
     default:
-      return Commentary[id].commentary[type];
+      return Commentary[year].commentary[type];
     }
   }
 }

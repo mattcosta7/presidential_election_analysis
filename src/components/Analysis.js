@@ -32,13 +32,35 @@ export default class Analysis extends React.Component {
     return (
       <div>
         <h3>Historical Deviation Trends</h3>
-        <ul className="list-group">
-          <li className="list-group-item">{actualAvg}: Historical Average Electoral Deviation: </li>
-          <li className="list-group-item">{prop3rdAvg}: 3rd Party Full Proportional</li>
-          <li className="list-group-item">{propAvg}: 2 Party Full Proportional</li>
-          <li className="list-group-item">{bonusAvg}: 2 Party Electoral Bonus</li>
-          <li className="list-group-item">{bonus3rdAvg}: 3rd Party Electoral Bonus</li>
-        </ul>
+        <div className="row">
+          <div className="col-sm-2"></div>
+            <div className="col-sm-8">
+            <ul className="list-group">
+              <li className="list-group-item">
+                <span className="tag tag-default tag-pill float-xs-right">
+                {actualAvg}
+                </span>
+                Historical Average Electoral Deviation:
+              </li>
+              <li className="list-group-item">
+                <span className="tag tag-default tag-pill float-xs-right">{prop3rdAvg}</span>
+                 3+ Party Full Proportional
+              </li>
+              <li className="list-group-item">
+                <span className="tag tag-default tag-pill float-xs-right">{propAvg}</span>
+                2 Party Full Proportional
+              </li>
+              <li className="list-group-item">
+                <span className="tag tag-default tag-pill float-xs-right">{bonusAvg}</span>
+                2 Party Electoral Bonus
+              </li>
+              <li className="list-group-item">
+                <span className="tag tag-default tag-pill float-xs-right">{bonus3rdAvg}</span>
+                3+ Party Electoral Bonus
+              </li>
+            </ul>
+          </div>
+        </div>
         <p>
           Historically, the deviation between the popular vote and the electoral vote allocations is approximately 25%, a pretty significant shift, and an unfair representation of the sentiments of American voters. Utilizing any of the allocations I've described instead, the deviation is minimized, up to almost 25%. This creates results in both votes, that follow eachother's trends, rather than painting vastly different canvases of the american sentiments, especially in areas with a closer distribution of votes between parties.
         </p>
@@ -80,6 +102,7 @@ export default class Analysis extends React.Component {
           <YearlyAnalysis year={election.year}
                           commentary={ElectionCommentary.getCommentary(election.year, "historical")}
           />
+          <h4>Revised Votes</h4>
           <YearlyRevisionist
             header="3rd Party Full Proportional"
             electoralVote={election.results.electoral.proportionalWithThirdParty}
