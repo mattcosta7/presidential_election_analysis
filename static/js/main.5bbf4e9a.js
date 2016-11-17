@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(87);
-	module.exports = __webpack_require__(106);
+	module.exports = __webpack_require__(108);
 
 
 /***/ },
@@ -505,7 +505,7 @@
 
 	'use strict';
 	
-	module.exports = __webpack_require__(173);
+	module.exports = __webpack_require__(175);
 
 
 /***/ },
@@ -2153,7 +2153,7 @@
 	
 	'use strict';
 	
-	var ReactRef = __webpack_require__(201);
+	var ReactRef = __webpack_require__(203);
 	var ReactInstrumentation = __webpack_require__(9);
 	
 	var warning = __webpack_require__(3);
@@ -3214,10 +3214,10 @@
 	
 	var EventConstants = __webpack_require__(12);
 	var EventPluginRegistry = __webpack_require__(36);
-	var ReactEventEmitterMixin = __webpack_require__(193);
+	var ReactEventEmitterMixin = __webpack_require__(195);
 	var ViewportMetrics = __webpack_require__(77);
 	
-	var getVendorPrefixedEventName = __webpack_require__(224);
+	var getVendorPrefixedEventName = __webpack_require__(226);
 	var isEventSupported = __webpack_require__(53);
 	
 	/**
@@ -4112,7 +4112,7 @@
 	'use strict';
 	
 	var DOMLazyTree = __webpack_require__(17);
-	var Danger = __webpack_require__(168);
+	var Danger = __webpack_require__(170);
 	var ReactMultiChildUpdateTypes = __webpack_require__(73);
 	var ReactDOMComponentTree = __webpack_require__(5);
 	var ReactInstrumentation = __webpack_require__(9);
@@ -7532,7 +7532,7 @@
 	var ReactDOMComponentTree = __webpack_require__(5);
 	var ReactInstrumentation = __webpack_require__(9);
 	
-	var quoteAttributeValueForBrowser = __webpack_require__(226);
+	var quoteAttributeValueForBrowser = __webpack_require__(228);
 	var warning = __webpack_require__(3);
 	
 	var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -9059,9 +9059,9 @@
 	
 	'use strict';
 	
-	var ReactDOMSelection = __webpack_require__(187);
+	var ReactDOMSelection = __webpack_require__(189);
 	
-	var containsNode = __webpack_require__(109);
+	var containsNode = __webpack_require__(111);
 	var focusNode = __webpack_require__(58);
 	var getActiveElement = __webpack_require__(59);
 	
@@ -9195,13 +9195,13 @@
 	var ReactBrowserEventEmitter = __webpack_require__(28);
 	var ReactCurrentOwner = __webpack_require__(16);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMContainerInfo = __webpack_require__(180);
-	var ReactDOMFeatureFlags = __webpack_require__(183);
+	var ReactDOMContainerInfo = __webpack_require__(182);
+	var ReactDOMFeatureFlags = __webpack_require__(185);
 	var ReactElement = __webpack_require__(10);
 	var ReactFeatureFlags = __webpack_require__(69);
 	var ReactInstanceMap = __webpack_require__(23);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactMarkupChecksum = __webpack_require__(196);
+	var ReactMarkupChecksum = __webpack_require__(198);
 	var ReactReconciler = __webpack_require__(19);
 	var ReactUpdateQueue = __webpack_require__(48);
 	var ReactUpdates = __webpack_require__(11);
@@ -10546,7 +10546,7 @@
 	var _prodInvariant = __webpack_require__(2),
 	    _assign = __webpack_require__(4);
 	
-	var ReactCompositeComponent = __webpack_require__(176);
+	var ReactCompositeComponent = __webpack_require__(178);
 	var ReactEmptyComponent = __webpack_require__(68);
 	var ReactHostComponent = __webpack_require__(70);
 	
@@ -10767,12 +10767,12 @@
 	  // Rejection tracking prevents a common issue where React gets into an
 	  // inconsistent state due to an error, but it gets swallowed by a Promise,
 	  // and the user has no idea what causes React's erratic future behavior.
-	  __webpack_require__(162).enable();
-	  window.Promise = __webpack_require__(161);
+	  __webpack_require__(164).enable();
+	  window.Promise = __webpack_require__(163);
 	}
 	
 	// fetch() polyfill for making API calls.
-	__webpack_require__(229);
+	__webpack_require__(231);
 	
 	// Object.assign() is commonly used with React.
 	// It will use the native implementation if it's present and isn't buggy.
@@ -11025,19 +11025,19 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Navbar = __webpack_require__(100);
+	var _Navbar = __webpack_require__(101);
 	
 	var _Navbar2 = _interopRequireDefault(_Navbar);
 	
-	var _Header = __webpack_require__(96);
+	var _Header = __webpack_require__(97);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _Main = __webpack_require__(99);
+	var _Main = __webpack_require__(100);
 	
 	var _Main2 = _interopRequireDefault(_Main);
 	
-	var _Footer = __webpack_require__(95);
+	var _Footer = __webpack_require__(96);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
@@ -11087,39 +11087,39 @@
 	  value: true
 	});
 	
-	var _presidentialElectionData = __webpack_require__(158);
+	var _presidentialElectionData = __webpack_require__(160);
 	
 	var _presidentialElectionData2 = _interopRequireDefault(_presidentialElectionData);
 	
-	var _ = __webpack_require__(156);
+	var _ = __webpack_require__(157);
 	
 	var _2 = _interopRequireDefault(_);
 	
-	var _3 = __webpack_require__(149);
+	var _3 = __webpack_require__(150);
 	
 	var _4 = _interopRequireDefault(_3);
 	
-	var _5 = __webpack_require__(150);
+	var _5 = __webpack_require__(151);
 	
 	var _6 = _interopRequireDefault(_5);
 	
-	var _7 = __webpack_require__(151);
+	var _7 = __webpack_require__(152);
 	
 	var _8 = _interopRequireDefault(_7);
 	
-	var _9 = __webpack_require__(152);
+	var _9 = __webpack_require__(153);
 	
 	var _10 = _interopRequireDefault(_9);
 	
-	var _11 = __webpack_require__(153);
+	var _11 = __webpack_require__(154);
 	
 	var _12 = _interopRequireDefault(_11);
 	
-	var _13 = __webpack_require__(154);
+	var _13 = __webpack_require__(155);
 	
 	var _14 = _interopRequireDefault(_13);
 	
-	var _15 = __webpack_require__(155);
+	var _15 = __webpack_require__(156);
 	
 	var _16 = _interopRequireDefault(_15);
 	
@@ -11150,7 +11150,7 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _commentary = __webpack_require__(148);
+	var _commentary = __webpack_require__(158);
 	
 	var _commentary2 = _interopRequireDefault(_commentary);
 	
@@ -11166,14 +11166,14 @@
 	  _createClass(ElectionCommentary, null, [{
 	    key: 'getCommentary',
 	    value: function getCommentary() {
-	      var id = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+	      var year = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
 	      var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 	
-	      switch (id) {
+	      switch (year) {
 	        case null:
 	          return _commentary2.default;
 	        default:
-	          return _commentary2.default[id].commentary[type];
+	          return _commentary2.default[year].commentary[type];
 	      }
 	    }
 	  }]);
@@ -11375,19 +11375,19 @@
 	
 	var _electionDetails2 = _interopRequireDefault(_electionDetails);
 	
-	var _YearlyResult = __webpack_require__(104);
+	var _YearlyResult = __webpack_require__(106);
 	
 	var _YearlyResult2 = _interopRequireDefault(_YearlyResult);
 	
-	var _YearlyHistorical = __webpack_require__(103);
+	var _YearlyHistorical = __webpack_require__(105);
 	
 	var _YearlyHistorical2 = _interopRequireDefault(_YearlyHistorical);
 	
-	var _YearlyRevisionist = __webpack_require__(105);
+	var _YearlyRevisionist = __webpack_require__(107);
 	
 	var _YearlyRevisionist2 = _interopRequireDefault(_YearlyRevisionist);
 	
-	var _YearlyAnalysis = __webpack_require__(102);
+	var _YearlyAnalysis = __webpack_require__(104);
 	
 	var _YearlyAnalysis2 = _interopRequireDefault(_YearlyAnalysis);
 	
@@ -11445,37 +11445,66 @@
 	          'Historical Deviation Trends'
 	        ),
 	        _react2.default.createElement(
-	          'ul',
-	          { className: 'list-group' },
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement('div', { className: 'col-sm-2' }),
 	          _react2.default.createElement(
-	            'li',
-	            { className: 'list-group-item' },
-	            actualAvg,
-	            ': Historical Average Electoral Deviation: '
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'list-group-item' },
-	            prop3rdAvg,
-	            ': 3rd Party Full Proportional'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'list-group-item' },
-	            propAvg,
-	            ': 2 Party Full Proportional'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'list-group-item' },
-	            bonusAvg,
-	            ': 2 Party Electoral Bonus'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'list-group-item' },
-	            bonus3rdAvg,
-	            ': 3rd Party Electoral Bonus'
+	            'div',
+	            { className: 'col-sm-8' },
+	            _react2.default.createElement(
+	              'ul',
+	              { className: 'list-group' },
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'list-group-item' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  actualAvg
+	                ),
+	                'Historical Average Electoral Deviation:'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'list-group-item' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  prop3rdAvg
+	                ),
+	                '3+ Party Full Proportional'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'list-group-item' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  propAvg
+	                ),
+	                '2 Party Full Proportional'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'list-group-item' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  bonusAvg
+	                ),
+	                '2 Party Electoral Bonus'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'list-group-item' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  bonus3rdAvg
+	                ),
+	                '3+ Party Electoral Bonus'
+	              )
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -11520,6 +11549,11 @@
 	          _react2.default.createElement(_YearlyAnalysis2.default, { year: election.year,
 	            commentary: _electionCommentary2.default.getCommentary(election.year, "historical")
 	          }),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'Revised Votes'
+	          ),
 	          _react2.default.createElement(_YearlyRevisionist2.default, {
 	            header: '3rd Party Full Proportional',
 	            electoralVote: election.results.electoral.proportionalWithThirdParty,
@@ -11596,6 +11630,100 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var Assumptions = function (_React$Component) {
+	  _inherits(Assumptions, _React$Component);
+	
+	  function Assumptions() {
+	    _classCallCheck(this, Assumptions);
+	
+	    return _possibleConstructorReturn(this, (Assumptions.__proto__ || Object.getPrototypeOf(Assumptions)).apply(this, arguments));
+	  }
+	
+	  _createClass(Assumptions, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Assumptions'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'The foundations of this article are built upon a couple assumptions. These are not necessarily items I agree with, or disagree with, but instead chose to deal with as immutable to narrow the scope of the issue. Additionally, I do not intend to disucss the correctness of any candidate or party, this attempts instead to analyze the separation of votes by their types in these elections. The starting point, 1964 is the first election that allocated 538 total electoral votes.'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'h6',
+	              null,
+	              'I assume that:'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'The current method of having a popular and electoral vote is maintained'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'The allocation of votes as is currently is maintained'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'That an election is more fair when the difference between the percent of both types of votes is minimized'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'That voter sentiments would be similar, and that the same number of votes would have been cast to the same candidate'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Assumptions;
+	}(_react2.default.Component);
+	
+	exports.default = Assumptions;
+	
+	
+	Assumptions.propTypes = {};
+
+/***/ },
+/* 95 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	var Conclusion = function (_React$Component) {
 	  _inherits(Conclusion, _React$Component);
 	
@@ -11644,7 +11772,7 @@
 	Conclusion.propTypes = {};
 
 /***/ },
-/* 95 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11692,7 +11820,7 @@
 	Footer.propTypes = {};
 
 /***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11755,7 +11883,7 @@
 	Header.propTypes = {};
 
 /***/ },
-/* 97 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11807,7 +11935,7 @@
 	Histry.propTypes = {};
 
 /***/ },
-/* 98 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11915,7 +12043,7 @@
 	Hypothesis.propTypes = {};
 
 /***/ },
-/* 99 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11930,15 +12058,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Problem = __webpack_require__(101);
+	var _Problem = __webpack_require__(102);
 	
 	var _Problem2 = _interopRequireDefault(_Problem);
 	
-	var _Hypothesis = __webpack_require__(98);
+	var _Hypothesis = __webpack_require__(99);
 	
 	var _Hypothesis2 = _interopRequireDefault(_Hypothesis);
 	
-	var _Histry = __webpack_require__(97);
+	var _Histry = __webpack_require__(98);
 	
 	var _Histry2 = _interopRequireDefault(_Histry);
 	
@@ -11946,9 +12074,17 @@
 	
 	var _Analysis2 = _interopRequireDefault(_Analysis);
 	
-	var _Conclusion = __webpack_require__(94);
+	var _Conclusion = __webpack_require__(95);
 	
 	var _Conclusion2 = _interopRequireDefault(_Conclusion);
+	
+	var _Synopsis = __webpack_require__(103);
+	
+	var _Synopsis2 = _interopRequireDefault(_Synopsis);
+	
+	var _Assumptions = __webpack_require__(94);
+	
+	var _Assumptions2 = _interopRequireDefault(_Assumptions);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -11972,8 +12108,10 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'main',
-	        null,
+	        { className: 'container' },
+	        _react2.default.createElement(_Synopsis2.default, null),
 	        _react2.default.createElement(_Problem2.default, null),
+	        _react2.default.createElement(_Assumptions2.default, null),
 	        _react2.default.createElement(_Hypothesis2.default, null),
 	        _react2.default.createElement(_Histry2.default, null),
 	        _react2.default.createElement(_Analysis2.default, null),
@@ -11988,7 +12126,7 @@
 	exports.default = Main;
 
 /***/ },
-/* 100 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12049,7 +12187,7 @@
 	Navbar.propTypes = {};
 
 /***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12160,7 +12298,79 @@
 	Problem.propTypes = {};
 
 /***/ },
-/* 102 */
+/* 103 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Synopsis = function (_React$Component) {
+	  _inherits(Synopsis, _React$Component);
+	
+	  function Synopsis() {
+	    _classCallCheck(this, Synopsis);
+	
+	    return _possibleConstructorReturn(this, (Synopsis.__proto__ || Object.getPrototypeOf(Synopsis)).apply(this, arguments));
+	  }
+	
+	  _createClass(Synopsis, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Synopsis'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'The electoral college, winner take all system creates an unbalanced representation of desires and sentiments in the election process. States swing support too strongly and unequitably based on the outcome of the in-state popular votes. This unfairness creates ',
+	          _react2.default.createElement(
+	            'em',
+	            null,
+	            'Swing States, Red States, and Blue States'
+	          ),
+	          ', which act to stymie voter turnout, decrease the sense of participation in the process, and create electoral results that can vastly differ from the popular vote.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'By allocating votes in a more proportional manner, every popular vote carries more weight, voters are empowered, even in traditionally single party areas, and the results are more in line with the intentions of the people in each state.'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Synopsis;
+	}(_react2.default.Component);
+	
+	exports.default = Synopsis;
+	
+	
+	Synopsis.propTypes = {};
+
+/***/ },
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12215,7 +12425,7 @@
 	};
 
 /***/ },
-/* 103 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12250,21 +12460,26 @@
 	  _createClass(YearlyHistorical, [{
 	    key: 'getWinningPartyClasses',
 	    value: function getWinningPartyClasses(party) {
-	      var retString = 'list-group-item';
-	      if (party === 'republican' && this.props.popularVote[party] > this.props.popularVote.democrat) {
-	        retString = retString + ' winner';
-	      } else if (party === 'democrat' && this.props.popularVote[party] > this.props.popularVote.republican) {
-	        retString = retString + ' winner';
-	      }
-	      return retString;
+	      return party === 'republican' && this.props.popularVote[party] > this.props.popularVote.democrat || party === 'democrat' && this.props.popularVote[party] > this.props.popularVote.republican ? 'list-group-item winner' : 'list-group-item';
 	    }
 	  }, {
 	    key: 'getListItemDescript',
 	    value: function getListItemDescript(party) {
-	      var candidate = this.props.candidates[party];
-	      var partySym = party === 'republican' ? '(R)' : '(D)';
+	      var candidate = this.props.candidates[party] || "Others";
+	      var partySym = party === 'republican' ? '(R)' : party === 'democrat' ? '(D)' : "";
 	      var popularVote = this.props.popularVote[party].toLocaleString();
-	      return candidate + ' ' + partySym + ' ' + popularVote;
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'tag tag-default tag-pill float-xs-right' },
+	          popularVote
+	        ),
+	        candidate,
+	        ' ',
+	        partySym
+	      );
 	    }
 	  }, {
 	    key: 'getListItem',
@@ -12290,24 +12505,29 @@
 	      var pctElectoralGreater = diff / winningElectoralPrct * 100;
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'list-group' },
 	        _react2.default.createElement(
-	          'div',
+	          'h4',
 	          null,
-	          'Percent of electoral votes received by winner: ',
-	          winningElectoralPrct.toFixed(2)
+	          'Comparison'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          null,
-	          'Percent of popular votes received by winner: ',
-	          winningPopVotePrct.toFixed(2)
+	          { className: 'list-group-item' },
+	          winningElectoralPrct.toFixed(2),
+	          '% Electoral Winner'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          null,
+	          { className: 'list-group-item' },
+	          winningPopVotePrct.toFixed(2),
+	          '% Popular Winner'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'list-group-item' },
 	          pctElectoralGreater.toFixed(2),
-	          ' percent more electoral votes awarded than popular votes'
+	          '% More Electoral'
 	        )
 	      );
 	    }
@@ -12316,56 +12536,85 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'h4',
-	          null,
-	          'Historical Vote'
-	        ),
-	        _react2.default.createElement(
-	          'h5',
-	          null,
-	          'Electoral Vote'
-	        ),
+	        { className: 'row' },
 	        _react2.default.createElement(
 	          'div',
-	          null,
+	          { className: 'row' },
 	          _react2.default.createElement(
-	            'div',
-	            { className: this.props.electoralVote.democrat >= 270 ? 'electoral-vote winner' : 'electoral-vote' },
-	            'Democrat: ',
-	            this.props.electoralVote.democrat
+	            'h4',
+	            null,
+	            'Historical Vote'
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: this.props.electoralVote.republican >= 270 ? 'electoral-vote winner' : 'electoral-vote' },
-	            'Republican: ',
-	            this.props.electoralVote.republican
+	            { className: 'col-xs-12 col-sm-6 col-md-4' },
+	            _react2.default.createElement(
+	              'h5',
+	              null,
+	              'Electoral Vote'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'list-group' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: this.props.electoralVote.democrat >= 270 ? 'list-group-item winner' : 'list-group-item' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  this.props.electoralVote.democrat
+	                ),
+	                'Democrat:'
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: this.props.electoralVote.republican >= 270 ? 'list-group-item winner' : 'list-group-item' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  this.props.electoralVote.republican
+	                ),
+	                'Republican:'
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: this.props.electoralVote.others >= 270 ? 'list-group-item winner' : 'list-group-item' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  this.props.electoralVote.others
+	                ),
+	                'Others:'
+	              )
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: this.props.electoralVote.others >= 270 ? 'electoral-vote winner' : 'electoral-vote' },
-	            'Others: ',
-	            this.props.electoralVote.others
+	            { className: 'col-xs-12 col-sm-6 col-md-4' },
+	            _react2.default.createElement(
+	              'h5',
+	              null,
+	              'Popular Vote'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'list-group' },
+	              this.getListItem('democrat'),
+	              this.getListItem('republican'),
+	              this.getListItem('others')
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-xs-12 col-sm-12 col-md-4' },
+	            this.compareElectoralToPopular()
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'h5',
-	          null,
-	          'Popular Vote'
-	        ),
-	        _react2.default.createElement(
 	          'div',
-	          { className: 'list-group' },
-	          this.getListItem('republican'),
-	          this.getListItem('democrat')
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          this.compareElectoralToPopular()
-	        ),
-	        this.props.children
+	          { className: 'row' },
+	          this.props.children
+	        )
 	      );
 	    }
 	  }]);
@@ -12395,7 +12644,7 @@
 	};
 
 /***/ },
-/* 104 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12435,12 +12684,12 @@
 	        { className: 'container-fluid' },
 	        _react2.default.createElement(
 	          'h3',
-	          null,
+	          { className: 'text-sm-center' },
 	          this.props.electionYear
 	        ),
 	        _react2.default.createElement(
 	          'h4',
-	          null,
+	          { className: 'text-sm-center' },
 	          this.props.candidates.democrat,
 	          ' (D) vs ',
 	          this.props.candidates.republican,
@@ -12464,7 +12713,7 @@
 	};
 
 /***/ },
-/* 105 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12512,24 +12761,24 @@
 	      var pctElectoralGreater = diff / winningElectoralPrct * 100;
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'list-group' },
 	        _react2.default.createElement(
 	          'div',
-	          null,
-	          'Winning % Electoral: ',
-	          winningElectoralPrct.toFixed(2)
+	          { className: 'list-group-item' },
+	          winningElectoralPrct.toFixed(2),
+	          '% Winning Electoral'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          null,
-	          'Winning % Popular: ',
-	          winningPopVotePrct.toFixed(2)
+	          { className: 'list-group-item' },
+	          winningPopVotePrct.toFixed(2),
+	          '% Winning Popular'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          null,
-	          'Winning Deviation from ideal: ',
-	          Math.abs(pctElectoralGreater).toFixed(2)
+	          { className: 'list-group-item' },
+	          Math.abs(pctElectoralGreater).toFixed(2),
+	          ' % More Electoral'
 	        )
 	      );
 	    }
@@ -12538,44 +12787,59 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'col-sm-6 col-lg-3' },
-	        _react2.default.createElement(
-	          'h4',
-	          null,
-	          this.props.header
-	        ),
-	        _react2.default.createElement(
-	          'h5',
-	          null,
-	          'Electoral Vote'
-	        ),
+	        { className: 'col-sm-12 col-md-6' },
 	        _react2.default.createElement(
 	          'div',
-	          null,
+	          { className: 'card' },
 	          _react2.default.createElement(
-	            'div',
-	            { className: this.props.electoralVote.democrat >= 270 ? 'electoral-vote winner' : 'electoral-vote' },
-	            'Democrat: ',
-	            this.props.electoralVote.democrat.toFixed(2)
+	            'h4',
+	            { className: 'card-header' },
+	            this.props.header
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: this.props.electoralVote.republican >= 270 ? 'electoral-vote winner' : 'electoral-vote' },
-	            'Republican: ',
-	            this.props.electoralVote.republican.toFixed(2)
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: this.props.electoralVote.others >= 270 ? 'electoral-vote winner' : 'electoral-vote' },
-	            'Others: ',
-	            this.props.electoralVote.others.toFixed(2)
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            null,
-	            this.compareElectoralToPopular()
-	          ),
-	          this.props.children
+	            { className: 'card-block' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'card-text' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: this.props.electoralVote.democrat >= 270 ? 'list-group-item winner' : 'list-group-item' },
+	                'Democrat: ',
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  this.props.electoralVote.democrat.toFixed(2)
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: this.props.electoralVote.republican >= 270 ? 'list-group-item winner' : 'list-group-item' },
+	                'Republican: ',
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  this.props.electoralVote.republican.toFixed(2)
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: this.props.electoralVote.others >= 270 ? 'list-group-item winner' : 'list-group-item' },
+	                'Others: ',
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'tag tag-default tag-pill float-xs-right' },
+	                  this.props.electoralVote.others.toFixed(2)
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                null,
+	                this.compareElectoralToPopular()
+	              ),
+	              this.props.children
+	            )
+	          )
 	        )
 	      );
 	    }
@@ -12607,7 +12871,7 @@
 	};
 
 /***/ },
-/* 106 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12616,7 +12880,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(163);
+	var _reactDom = __webpack_require__(165);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
@@ -12629,7 +12893,7 @@
 	_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
 
 /***/ },
-/* 107 */
+/* 109 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -12665,7 +12929,7 @@
 	module.exports = camelize;
 
 /***/ },
-/* 108 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12681,7 +12945,7 @@
 	
 	'use strict';
 	
-	var camelize = __webpack_require__(107);
+	var camelize = __webpack_require__(109);
 	
 	var msPattern = /^-ms-/;
 	
@@ -12709,7 +12973,7 @@
 	module.exports = camelizeStyleName;
 
 /***/ },
-/* 109 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12725,7 +12989,7 @@
 	 * 
 	 */
 	
-	var isTextNode = __webpack_require__(117);
+	var isTextNode = __webpack_require__(119);
 	
 	/*eslint-disable no-bitwise */
 	
@@ -12753,7 +13017,7 @@
 	module.exports = containsNode;
 
 /***/ },
-/* 110 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12884,7 +13148,7 @@
 	module.exports = createArrayFromMixed;
 
 /***/ },
-/* 111 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12904,8 +13168,8 @@
 	
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var createArrayFromMixed = __webpack_require__(110);
-	var getMarkupWrap = __webpack_require__(112);
+	var createArrayFromMixed = __webpack_require__(112);
+	var getMarkupWrap = __webpack_require__(114);
 	var invariant = __webpack_require__(1);
 	
 	/**
@@ -12972,7 +13236,7 @@
 	module.exports = createNodesFromMarkup;
 
 /***/ },
-/* 112 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13071,7 +13335,7 @@
 	module.exports = getMarkupWrap;
 
 /***/ },
-/* 113 */
+/* 115 */
 /***/ function(module, exports) {
 
 	/**
@@ -13114,7 +13378,7 @@
 	module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 114 */
+/* 116 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -13151,7 +13415,7 @@
 	module.exports = hyphenate;
 
 /***/ },
-/* 115 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13167,7 +13431,7 @@
 	
 	'use strict';
 	
-	var hyphenate = __webpack_require__(114);
+	var hyphenate = __webpack_require__(116);
 	
 	var msPattern = /^ms-/;
 	
@@ -13194,7 +13458,7 @@
 	module.exports = hyphenateStyleName;
 
 /***/ },
-/* 116 */
+/* 118 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -13221,7 +13485,7 @@
 	module.exports = isNode;
 
 /***/ },
-/* 117 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13237,7 +13501,7 @@
 	 * @typechecks
 	 */
 	
-	var isNode = __webpack_require__(116);
+	var isNode = __webpack_require__(118);
 	
 	/**
 	 * @param {*} object The object to check.
@@ -13250,7 +13514,7 @@
 	module.exports = isTextNode;
 
 /***/ },
-/* 118 */
+/* 120 */
 /***/ function(module, exports) {
 
 	/**
@@ -13284,7 +13548,7 @@
 	module.exports = memoizeStringOnly;
 
 /***/ },
-/* 119 */
+/* 121 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -13603,7 +13867,7 @@
 	};
 
 /***/ },
-/* 120 */
+/* 122 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -13922,7 +14186,7 @@
 	};
 
 /***/ },
-/* 121 */
+/* 123 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -14241,7 +14505,7 @@
 	};
 
 /***/ },
-/* 122 */
+/* 124 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -14560,7 +14824,7 @@
 	};
 
 /***/ },
-/* 123 */
+/* 125 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -14879,7 +15143,7 @@
 	};
 
 /***/ },
-/* 124 */
+/* 126 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -15198,7 +15462,7 @@
 	};
 
 /***/ },
-/* 125 */
+/* 127 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -15517,7 +15781,7 @@
 	};
 
 /***/ },
-/* 126 */
+/* 128 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -15836,7 +16100,7 @@
 	};
 
 /***/ },
-/* 127 */
+/* 129 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -16155,7 +16419,7 @@
 	};
 
 /***/ },
-/* 128 */
+/* 130 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -16474,7 +16738,7 @@
 	};
 
 /***/ },
-/* 129 */
+/* 131 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -16793,7 +17057,7 @@
 	};
 
 /***/ },
-/* 130 */
+/* 132 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -17112,7 +17376,7 @@
 	};
 
 /***/ },
-/* 131 */
+/* 133 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -17431,7 +17695,7 @@
 	};
 
 /***/ },
-/* 132 */
+/* 134 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -17750,7 +18014,7 @@
 	};
 
 /***/ },
-/* 133 */
+/* 135 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -18069,7 +18333,7 @@
 	};
 
 /***/ },
-/* 134 */
+/* 136 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -18388,7 +18652,7 @@
 	};
 
 /***/ },
-/* 135 */
+/* 137 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -18707,7 +18971,7 @@
 	};
 
 /***/ },
-/* 136 */
+/* 138 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -19026,7 +19290,7 @@
 	};
 
 /***/ },
-/* 137 */
+/* 139 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -19345,7 +19609,7 @@
 	};
 
 /***/ },
-/* 138 */
+/* 140 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -19664,7 +19928,7 @@
 	};
 
 /***/ },
-/* 139 */
+/* 141 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -19983,7 +20247,7 @@
 	};
 
 /***/ },
-/* 140 */
+/* 142 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -20302,7 +20566,7 @@
 	};
 
 /***/ },
-/* 141 */
+/* 143 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -20621,7 +20885,7 @@
 	};
 
 /***/ },
-/* 142 */
+/* 144 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -21195,7 +21459,7 @@
 	};
 
 /***/ },
-/* 143 */
+/* 145 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -21769,7 +22033,7 @@
 	};
 
 /***/ },
-/* 144 */
+/* 146 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -22343,7 +22607,7 @@
 	};
 
 /***/ },
-/* 145 */
+/* 147 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -22917,7 +23181,7 @@
 	};
 
 /***/ },
-/* 146 */
+/* 148 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -23491,7 +23755,7 @@
 	};
 
 /***/ },
-/* 147 */
+/* 149 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -24065,154 +24329,7 @@
 	};
 
 /***/ },
-/* 148 */
-/***/ function(module, exports) {
-
-	module.exports = {
-		"1964": {
-			"commentary": {
-				"historical": {
-					"body": "In 1964, Lyndon Johnson ran away with the election with a wopping 486 electoral votes (more than 90%). Despite this overwhelming majority of electoral representation, less than 2 out of 3 americans actually voted for him on election day. This outpaces his popular representation by over 30%."
-				},
-				"revisionist": {
-					"body": "Using a more proportional allocation of votes, the deviations between the electoral vote and popular vote become much more narrow. In his best showing he garners just over 350 electoral votes, or 65%, whereas in his 'worst' using these methods, just under 60%. These very closesly pace his popular vote percent, and much more accurately represent the voters feelings, as expressed at the polls."
-				}
-			}
-		},
-		"1968": {
-			"commentary": {
-				"historical": {
-					"body": "The Nixon-Humphrey race in 1968 was much closer, with less than 600,000 votes separating the two candidates. Nixon won with almost 56% of the electoral votes, while just squeaking out a win in the popular vote with 50.4%. This separates the two votes by almost 10%!"
-				},
-				"revisionist": {
-					"body": "In none of the other scenarios does either candidate garner enough votes in the electoral college to be elected president. It's likely that the allocation of votes from a third party candidate to one of these two might have contributed to a win, but it's unknown as to which direction they would have gone, especially in the states that voted, strongly for 3rd party candidate, George Wallace (46 Electoral Votes, and over 9,000,000 popular). In each model, Nixon still maintains a lead, but his vote counts more more closely mirror eachother in distribution, in both scenarios that include the 3rd party results in the proportion of electoral votes. In a full proportional 2 party vote, the gap closes slightly, while in a 2 party spread, with a winner bonus of 2 votes per state, the gap widens to 14%."
-				}
-			}
-		},
-		"1972": {
-			"commentary": {
-				"historical": {
-					"body": "In 1972, the incumbent, Nixon ran against McGovern and handily defeated him at both levels. He received more than 62% of the popular vote, but almost 97% of the electoral votes, a 36% increase!"
-				},
-				"revisionist": {
-					"body": "In each scenario, vote allocations much more closely trend eachother, with a 3rd party proportional spread allocating just about 61% of the votes in both counts, while a 2 party spread just slightly outside that.  Both elections have spreads near 11% in the winner-bonus scenarios."
-				}
-			}
-		},
-		"1976": {
-			"commentary": {
-				"historical": {
-					"body": "Jimmy Carter beat out Ford in 1976 with just over 51% of the popular vote, and 55% of the electoral votes (a 7% spread)."
-				},
-				"revisionist": {
-					"body": "In every scenario, the spread is extremely limited, but when split to include 3rd parties, doesn't allocate enough votes to either of the main candidates for election. In the best scenario, spreading the votes proportionally between the parties, only .04% separate the 2 results, with no allocation more than 2% off."
-				}
-			}
-		},
-		"1980": {
-			"commentary": {
-				"historical": {
-					"body": "In 1980, an unpopular Jimmy Carter was overwhelmingly elected president with 489 electoral votes, despite garnering only 55.3 percent of the popular votes. That's almost 40% more electoral votes than popular."
-				},
-				"revisionist": {
-					"body": "In each scenario, the 40% difference is closed tremendously, with a 3 party proportional spread once again closing the gap to .04%.  In no new scenarios is Carter re-elected, but in each, Reagan is elected with a more reasonable vote allocation, of at most 61%, a much more modest spread."
-				}
-			}
-		},
-		"1984": {
-			"commentary": {
-				"historical": {
-					"body": "In '84, Reagan once again was elected, besting his previous Electoral score, with 525 votes. This time he received more than 59% of the popular vote, but almost 98% of the electoral votes."
-				},
-				"revisionist": {
-					"body": "Reagan's electoral totals come back to reality when spread using a more proportional methodology, with the best scenario less than half a percent off from the 'ideal' spread - where electoral votes trend the popular.  In cases where a winning bonus is allocated, the almost 40% vote spread drops to just around 11%"
-				}
-			}
-		},
-		"1988": {
-			"commentary": {
-				"historical": {
-					"body": "In '88, George HW Bush walked away with the presidency, collecting 426 electoral votes, almost 80% of them. When you look at the popular votes, the story is much less clear, given that he didn't even collect 54% of the votes cast."
-				},
-				"revisionist": {
-					"body": "The numbers close significantly in every reallocation of electoral votes. In the best spread for Bush, he achieves about 8% more electoral votes than popular ones (comparatively), whereas the most even distribution he only deviates from the ideal by .55%."
-				}
-			}
-		},
-		"1992": {
-			"commentary": {
-				"historical": {
-					"body": "Bill Clinton carried the election, amassing a 370 electoral vote total, almost 69%.  He, however, barely won the popular vote, with under 52% of them."
-				},
-				"revisionist": {
-					"body": "Third parties acheived a huge number of votes, and including them in the allocation process manages to allocate 75-95 electoral votes to them, rather than the 2 main candidates. Doing so does not manage to elect someone directly, a stark difference from the 370 vote total Clinton achieved. In one scenario (2 party only, proportional), the election flips (which isn't ideal, given that the popular vote was not for Bush)."
-				}
-			}
-		},
-		"1996": {
-			"commentary": {
-				"historical": {
-					"body": "Clinton repeated his dominant electoral college performance in 96 against Bob Dole.  This time he won almost 55% of the popular vote, but over 70% of the electoral vote, an increase of more than 22%."
-				},
-				"revisionist": {
-					"body": "In most scenarios, the same outcome exists, but the gap is narrowed by a lot.  In a 3 party split, Clinton is just under 2 votes shy of presidency, while in a 2 party split with a bonus, he wins with 56% of the electoral votes, a gap half that of the actual result"
-				}
-			}
-		},
-		"2000": {
-			"commentary": {
-				"historical": {
-					"body": "In the 2000 election, Al Gore managed to win the popular vote by an incredibly close margin of ~140k votes. He lost the presidency, though as George W Bush won 271 of the electoral votes. Many recounts later, these numbers stood. The spread here was prety close, with only 1.3% less popular votes than electoral going to Bush."
-				},
-				"revisionist": {
-					"body": "In only 1 scenario is a presidency confirmed, where Bush receives slightly more electoral votes than he may have deserved (2 party spread, with bonus). In most, the results appear 'too close to call', but separate by even less in a full 3 party spread."
-				}
-			}
-		},
-		"2004": {
-			"commentary": {
-				"historical": {
-					"body": "Bush maintained his position, over John Kerry in 2004, this time managing to even win the popular vote, by ~3 million.  He took +53% of the electoral votes, and +51% of the electoral. Only a ~3.6% spread."
-				},
-				"revisionist": {
-					"body": "In these scenarios, the results are pretty close to the actual result, although there's a more amicable spead in both of the allocations that include 3rd parties."
-				}
-			}
-		},
-		"2008": {
-			"commentary": {
-				"historical": {
-					"body": "In 2008, Barack Obama became president, accumulating almost 54% of the popular vote, but more than 67% of the electoral vote. This totaled almost 21% more than his popular total."
-				},
-				"revisionist": {
-					"body": "In each scenario there's a much more reasonable spread of, at worst, 2.6%, and at best only .46% between the two vote types."
-				}
-			}
-		},
-		"2012": {
-			"commentary": {
-				"historical": {
-					"body": "Obama maintained his presidency accumulating almost 62% of the electoral votes, almost 16% more than his modest popular vote numbers, of 52%."
-				},
-				"revisionist": {
-					"body": "Once again, each scenario ends with the same outcome, but spread more reasonaly, with less than 2% difference in any scenario."
-				}
-			}
-		},
-		"2016": {
-			"commentary": {
-				"historical": {
-					"body": "In a close election, Donald Trump defeated Hilary Clinton with 306 electoral votes, to her 232. Trump, however, did not win the popular vote, with just under 50%, and 280k less votes. This is over 12% more electoral votes than popular ones"
-				},
-				"revisionist": {
-					"body": "In both 2 party scenarios, the gap between candidates is narrowed to under 7%, without a bonus, the election shifts to Clinton, with a bonus it is more closely still Trump. In both 3 party splits, neither candidate manages a 270 vote total, and 3rd parties pick up over 20 votes themselves."
-				}
-			}
-		}
-	};
-
-/***/ },
-/* 149 */
+/* 150 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -24786,7 +24903,7 @@
 	};
 
 /***/ },
-/* 150 */
+/* 151 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -25360,7 +25477,7 @@
 	};
 
 /***/ },
-/* 151 */
+/* 152 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -25934,7 +26051,7 @@
 	};
 
 /***/ },
-/* 152 */
+/* 153 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -26508,7 +26625,7 @@
 	};
 
 /***/ },
-/* 153 */
+/* 154 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -27082,7 +27199,7 @@
 	};
 
 /***/ },
-/* 154 */
+/* 155 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -27656,7 +27773,7 @@
 	};
 
 /***/ },
-/* 155 */
+/* 156 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -28230,7 +28347,7 @@
 	};
 
 /***/ },
-/* 156 */
+/* 157 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -28804,7 +28921,154 @@
 	};
 
 /***/ },
-/* 157 */
+/* 158 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"1964": {
+			"commentary": {
+				"historical": {
+					"body": "In 1964, Lyndon Johnson ran away with the election with a wopping 486 electoral votes (more than 90%). Despite this overwhelming majority of electoral representation, less than 2 out of 3 americans actually voted for him on election day. This outpaces his popular representation by over 30%."
+				},
+				"revisionist": {
+					"body": "Using a more proportional allocation of votes, the deviations between the electoral vote and popular vote become much more narrow. In his best showing he garners just over 350 electoral votes, or 65%, whereas in his 'worst' using these methods, just under 60%. These very closesly pace his popular vote percent, and much more accurately represent the voters feelings, as expressed at the polls."
+				}
+			}
+		},
+		"1968": {
+			"commentary": {
+				"historical": {
+					"body": "The Nixon-Humphrey race in 1968 was much closer, with less than 600,000 votes separating the two candidates. Nixon won with almost 56% of the electoral votes, while just squeaking out a win in the popular vote with 50.4%. This separates the two votes by almost 10%!"
+				},
+				"revisionist": {
+					"body": "In none of the other scenarios does either candidate garner enough votes in the electoral college to be elected president. It's likely that the allocation of votes from a third party candidate to one of these two might have contributed to a win, but it's unknown as to which direction they would have gone, especially in the states that voted, strongly for 3rd party candidate, George Wallace (46 Electoral Votes, and over 9,000,000 popular). In each model, Nixon still maintains a lead, but his vote counts more more closely mirror eachother in distribution, in both scenarios that include the 3rd party results in the proportion of electoral votes. In a full proportional 2 party vote, the gap closes slightly, while in a 2 party spread, with a winner bonus of 2 votes per state, the gap widens to 14%."
+				}
+			}
+		},
+		"1972": {
+			"commentary": {
+				"historical": {
+					"body": "In 1972, the incumbent, Nixon ran against McGovern and handily defeated him at both levels. He received more than 62% of the popular vote, but almost 97% of the electoral votes, a 36% increase!"
+				},
+				"revisionist": {
+					"body": "In each scenario, vote allocations much more closely trend eachother, with a 3rd party proportional spread allocating just about 61% of the votes in both counts, while a 2 party spread just slightly outside that.  Both elections have spreads near 11% in the winner-bonus scenarios."
+				}
+			}
+		},
+		"1976": {
+			"commentary": {
+				"historical": {
+					"body": "Jimmy Carter beat out Ford in 1976 with just over 51% of the popular vote, and 55% of the electoral votes (a 7% spread)."
+				},
+				"revisionist": {
+					"body": "In every scenario, the spread is extremely limited, but when split to include 3rd parties, doesn't allocate enough votes to either of the main candidates for election. In the best scenario, spreading the votes proportionally between the parties, only .04% separate the 2 results, with no allocation more than 2% off."
+				}
+			}
+		},
+		"1980": {
+			"commentary": {
+				"historical": {
+					"body": "In 1980, an unpopular Jimmy Carter was overwhelmingly elected president with 489 electoral votes, despite garnering only 55.3 percent of the popular votes. That's almost 40% more electoral votes than popular."
+				},
+				"revisionist": {
+					"body": "In each scenario, the 40% difference is closed tremendously, with a 3 party proportional spread once again closing the gap to .04%.  In no new scenarios is Carter re-elected, but in each, Reagan is elected with a more reasonable vote allocation, of at most 61%, a much more modest spread."
+				}
+			}
+		},
+		"1984": {
+			"commentary": {
+				"historical": {
+					"body": "In '84, Reagan once again was elected, besting his previous Electoral score, with 525 votes. This time he received more than 59% of the popular vote, but almost 98% of the electoral votes."
+				},
+				"revisionist": {
+					"body": "Reagan's electoral totals come back to reality when spread using a more proportional methodology, with the best scenario less than half a percent off from the 'ideal' spread - where electoral votes trend the popular.  In cases where a winning bonus is allocated, the almost 40% vote spread drops to just around 11%"
+				}
+			}
+		},
+		"1988": {
+			"commentary": {
+				"historical": {
+					"body": "In '88, George HW Bush walked away with the presidency, collecting 426 electoral votes, almost 80% of them. When you look at the popular votes, the story is much less clear, given that he didn't even collect 54% of the votes cast."
+				},
+				"revisionist": {
+					"body": "The numbers close significantly in every reallocation of electoral votes. In the best spread for Bush, he achieves about 8% more electoral votes than popular ones (comparatively), whereas the most even distribution he only deviates from the ideal by .55%."
+				}
+			}
+		},
+		"1992": {
+			"commentary": {
+				"historical": {
+					"body": "Bill Clinton carried the election, amassing a 370 electoral vote total, almost 69%.  He, however, barely won the popular vote, with under 52% of them."
+				},
+				"revisionist": {
+					"body": "Third parties acheived a huge number of votes, and including them in the allocation process manages to allocate 75-95 electoral votes to them, rather than the 2 main candidates. Doing so does not manage to elect someone directly, a stark difference from the 370 vote total Clinton achieved. In one scenario (2 party only, proportional), the election flips (which isn't ideal, given that the popular vote was not for Bush)."
+				}
+			}
+		},
+		"1996": {
+			"commentary": {
+				"historical": {
+					"body": "Clinton repeated his dominant electoral college performance in 96 against Bob Dole.  This time he won almost 55% of the popular vote, but over 70% of the electoral vote, an increase of more than 22%."
+				},
+				"revisionist": {
+					"body": "In most scenarios, the same outcome exists, but the gap is narrowed by a lot.  In a 3 party split, Clinton is just under 2 votes shy of presidency, while in a 2 party split with a bonus, he wins with 56% of the electoral votes, a gap half that of the actual result"
+				}
+			}
+		},
+		"2000": {
+			"commentary": {
+				"historical": {
+					"body": "In the 2000 election, Al Gore managed to win the popular vote by an incredibly close margin of ~140k votes. He lost the presidency, though as George W Bush won 271 of the electoral votes. Many recounts later, these numbers stood. The spread here was prety close, with only 1.3% less popular votes than electoral going to Bush."
+				},
+				"revisionist": {
+					"body": "In only 1 scenario is a presidency confirmed, where Bush receives slightly more electoral votes than he may have deserved (2 party spread, with bonus). In most, the results appear 'too close to call', but separate by even less in a full 3 party spread."
+				}
+			}
+		},
+		"2004": {
+			"commentary": {
+				"historical": {
+					"body": "Bush maintained his position, over John Kerry in 2004, this time managing to even win the popular vote, by ~3 million.  He took +53% of the electoral votes, and +51% of the electoral. Only a ~3.6% spread."
+				},
+				"revisionist": {
+					"body": "In these scenarios, the results are pretty close to the actual result, although there's a more amicable spead in both of the allocations that include 3rd parties."
+				}
+			}
+		},
+		"2008": {
+			"commentary": {
+				"historical": {
+					"body": "In 2008, Barack Obama became president, accumulating almost 54% of the popular vote, but more than 67% of the electoral vote. This totaled almost 21% more than his popular total."
+				},
+				"revisionist": {
+					"body": "In each scenario there's a much more reasonable spread of, at worst, 2.6%, and at best only .46% between the two vote types."
+				}
+			}
+		},
+		"2012": {
+			"commentary": {
+				"historical": {
+					"body": "Obama maintained his presidency accumulating almost 62% of the electoral votes, almost 16% more than his modest popular vote numbers, of 52%."
+				},
+				"revisionist": {
+					"body": "Once again, each scenario ends with the same outcome, but spread more reasonaly, with less than 2% difference in any scenario."
+				}
+			}
+		},
+		"2016": {
+			"commentary": {
+				"historical": {
+					"body": "In a close election, Donald Trump defeated Hilary Clinton with 306 electoral votes, to her 232. Trump, however, did not win the popular vote, with just under 50%, and 280k less votes. This is over 12% more electoral votes than popular ones"
+				},
+				"revisionist": {
+					"body": "In both 2 party scenarios, the gap between candidates is narrowed to under 7%, without a bonus, the election shifts to Clinton, with a bonus it is more closely still Trump. In both 3 party splits, neither candidate manages a 270 vote total, and 3rd parties pick up over 20 votes themselves."
+				}
+			}
+		}
+	};
+
+/***/ },
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/**
@@ -45050,56 +45314,56 @@
 	  }
 	}.call(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(228)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(230)(module), (function() { return this; }())))
 
 /***/ },
-/* 158 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	const years = __webpack_require__(160).all
+	const years = __webpack_require__(162).all
 	
 	const result = {}
 	years.forEach((year) => {
-	  result[year] = __webpack_require__(159)("./" + year + '.json')
+	  result[year] = __webpack_require__(161)("./" + year + '.json')
 	})
 	
 	module.exports = result
 
 
 /***/ },
-/* 159 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./1900.json": 119,
-		"./1904.json": 120,
-		"./1908.json": 121,
-		"./1912.json": 122,
-		"./1916.json": 123,
-		"./1920.json": 124,
-		"./1924.json": 125,
-		"./1928.json": 126,
-		"./1932.json": 127,
-		"./1936.json": 128,
-		"./1940.json": 129,
-		"./1944.json": 130,
-		"./1948.json": 131,
-		"./1952.json": 132,
-		"./1956.json": 133,
-		"./1960.json": 134,
-		"./1964.json": 135,
-		"./1968.json": 136,
-		"./1972.json": 137,
-		"./1976.json": 138,
-		"./1980.json": 139,
-		"./1984.json": 140,
-		"./1988.json": 141,
-		"./1992.json": 142,
-		"./1996.json": 143,
-		"./2000.json": 144,
-		"./2004.json": 145,
-		"./2008.json": 146,
-		"./2012.json": 147
+		"./1900.json": 121,
+		"./1904.json": 122,
+		"./1908.json": 123,
+		"./1912.json": 124,
+		"./1916.json": 125,
+		"./1920.json": 126,
+		"./1924.json": 127,
+		"./1928.json": 128,
+		"./1932.json": 129,
+		"./1936.json": 130,
+		"./1940.json": 131,
+		"./1944.json": 132,
+		"./1948.json": 133,
+		"./1952.json": 134,
+		"./1956.json": 135,
+		"./1960.json": 136,
+		"./1964.json": 137,
+		"./1968.json": 138,
+		"./1972.json": 139,
+		"./1976.json": 140,
+		"./1980.json": 141,
+		"./1984.json": 142,
+		"./1988.json": 143,
+		"./1992.json": 144,
+		"./1996.json": 145,
+		"./2000.json": 146,
+		"./2004.json": 147,
+		"./2008.json": 148,
+		"./2012.json": 149
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -45112,14 +45376,14 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 159;
+	webpackContext.id = 161;
 
 
 /***/ },
-/* 160 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
-	const  _ = __webpack_require__(157)
+	const  _ = __webpack_require__(159)
 	
 	const csv = ['1992', '1996', '2000', '2004', '2008', '2012']
 	const twoSeventy = _.range(1900, 1988, 4).map((n) => '' + n)
@@ -45132,7 +45396,7 @@
 
 
 /***/ },
-/* 161 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45245,7 +45509,7 @@
 
 
 /***/ },
-/* 162 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45363,16 +45627,16 @@
 	}
 
 /***/ },
-/* 163 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(177);
+	module.exports = __webpack_require__(179);
 
 
 /***/ },
-/* 164 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -45401,7 +45665,7 @@
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 165 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -45420,9 +45684,9 @@
 	var EventConstants = __webpack_require__(12);
 	var EventPropagators = __webpack_require__(22);
 	var ExecutionEnvironment = __webpack_require__(7);
-	var FallbackCompositionState = __webpack_require__(171);
-	var SyntheticCompositionEvent = __webpack_require__(209);
-	var SyntheticInputEvent = __webpack_require__(212);
+	var FallbackCompositionState = __webpack_require__(173);
+	var SyntheticCompositionEvent = __webpack_require__(211);
+	var SyntheticInputEvent = __webpack_require__(214);
 	
 	var keyOf = __webpack_require__(14);
 	
@@ -45796,7 +46060,7 @@
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 166 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -45816,10 +46080,10 @@
 	var ExecutionEnvironment = __webpack_require__(7);
 	var ReactInstrumentation = __webpack_require__(9);
 	
-	var camelizeStyleName = __webpack_require__(108);
-	var dangerousStyleValue = __webpack_require__(219);
-	var hyphenateStyleName = __webpack_require__(115);
-	var memoizeStringOnly = __webpack_require__(118);
+	var camelizeStyleName = __webpack_require__(110);
+	var dangerousStyleValue = __webpack_require__(221);
+	var hyphenateStyleName = __webpack_require__(117);
+	var memoizeStringOnly = __webpack_require__(120);
 	var warning = __webpack_require__(3);
 	
 	var processStyleName = memoizeStringOnly(function (styleName) {
@@ -46006,7 +46270,7 @@
 	module.exports = CSSPropertyOperations;
 
 /***/ },
-/* 167 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -46336,7 +46600,7 @@
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 168 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -46357,7 +46621,7 @@
 	var DOMLazyTree = __webpack_require__(17);
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var createNodesFromMarkup = __webpack_require__(111);
+	var createNodesFromMarkup = __webpack_require__(113);
 	var emptyFunction = __webpack_require__(8);
 	var invariant = __webpack_require__(1);
 	
@@ -46389,7 +46653,7 @@
 	module.exports = Danger;
 
 /***/ },
-/* 169 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -46421,7 +46685,7 @@
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 170 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -46531,7 +46795,7 @@
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 171 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -46631,7 +46895,7 @@
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 172 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -46848,7 +47112,7 @@
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 173 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -46868,14 +47132,14 @@
 	
 	var ReactChildren = __webpack_require__(64);
 	var ReactComponent = __webpack_require__(40);
-	var ReactPureComponent = __webpack_require__(199);
+	var ReactPureComponent = __webpack_require__(201);
 	var ReactClass = __webpack_require__(65);
-	var ReactDOMFactories = __webpack_require__(182);
+	var ReactDOMFactories = __webpack_require__(184);
 	var ReactElement = __webpack_require__(10);
 	var ReactPropTypes = __webpack_require__(75);
 	var ReactVersion = __webpack_require__(76);
 	
-	var onlyChild = __webpack_require__(225);
+	var onlyChild = __webpack_require__(227);
 	var warning = __webpack_require__(3);
 	
 	var createElement = ReactElement.createElement;
@@ -46942,7 +47206,7 @@
 	module.exports = React;
 
 /***/ },
-/* 174 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -47102,7 +47366,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(33)))
 
 /***/ },
-/* 175 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -47119,7 +47383,7 @@
 	'use strict';
 	
 	var DOMChildrenOperations = __webpack_require__(34);
-	var ReactDOMIDOperations = __webpack_require__(184);
+	var ReactDOMIDOperations = __webpack_require__(186);
 	
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -47137,7 +47401,7 @@
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 176 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -47166,7 +47430,7 @@
 	var ReactPropTypeLocations = __webpack_require__(46);
 	var ReactReconciler = __webpack_require__(19);
 	
-	var checkReactTypeSpec = __webpack_require__(218);
+	var checkReactTypeSpec = __webpack_require__(220);
 	var emptyObject = __webpack_require__(20);
 	var invariant = __webpack_require__(1);
 	var shallowEqual = __webpack_require__(32);
@@ -48046,7 +48310,7 @@
 	module.exports = ReactCompositeComponent;
 
 /***/ },
-/* 177 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -48065,15 +48329,15 @@
 	'use strict';
 	
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDefaultInjection = __webpack_require__(192);
+	var ReactDefaultInjection = __webpack_require__(194);
 	var ReactMount = __webpack_require__(72);
 	var ReactReconciler = __webpack_require__(19);
 	var ReactUpdates = __webpack_require__(11);
 	var ReactVersion = __webpack_require__(76);
 	
-	var findDOMNode = __webpack_require__(220);
+	var findDOMNode = __webpack_require__(222);
 	var getHostComponentFromComposite = __webpack_require__(81);
-	var renderSubtreeIntoContainer = __webpack_require__(227);
+	var renderSubtreeIntoContainer = __webpack_require__(229);
 	var warning = __webpack_require__(3);
 	
 	ReactDefaultInjection.inject();
@@ -48161,7 +48425,7 @@
 	module.exports = ReactDOM;
 
 /***/ },
-/* 178 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -48190,7 +48454,7 @@
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 179 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -48211,8 +48475,8 @@
 	var _prodInvariant = __webpack_require__(2),
 	    _assign = __webpack_require__(4);
 	
-	var AutoFocusUtils = __webpack_require__(164);
-	var CSSPropertyOperations = __webpack_require__(166);
+	var AutoFocusUtils = __webpack_require__(166);
+	var CSSPropertyOperations = __webpack_require__(168);
 	var DOMLazyTree = __webpack_require__(17);
 	var DOMNamespaces = __webpack_require__(35);
 	var DOMProperty = __webpack_require__(18);
@@ -48221,16 +48485,16 @@
 	var EventPluginHub = __webpack_require__(21);
 	var EventPluginRegistry = __webpack_require__(36);
 	var ReactBrowserEventEmitter = __webpack_require__(28);
-	var ReactDOMButton = __webpack_require__(178);
+	var ReactDOMButton = __webpack_require__(180);
 	var ReactDOMComponentFlags = __webpack_require__(66);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMInput = __webpack_require__(185);
-	var ReactDOMOption = __webpack_require__(186);
+	var ReactDOMInput = __webpack_require__(187);
+	var ReactDOMOption = __webpack_require__(188);
 	var ReactDOMSelect = __webpack_require__(67);
-	var ReactDOMTextarea = __webpack_require__(189);
+	var ReactDOMTextarea = __webpack_require__(191);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactMultiChild = __webpack_require__(197);
-	var ReactServerRenderingTransaction = __webpack_require__(202);
+	var ReactMultiChild = __webpack_require__(199);
+	var ReactServerRenderingTransaction = __webpack_require__(204);
 	
 	var emptyFunction = __webpack_require__(8);
 	var escapeTextContentForBrowser = __webpack_require__(30);
@@ -49201,7 +49465,7 @@
 	module.exports = ReactDOMComponent;
 
 /***/ },
-/* 180 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -49239,7 +49503,7 @@
 	module.exports = ReactDOMContainerInfo;
 
 /***/ },
-/* 181 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -49304,7 +49568,7 @@
 	module.exports = ReactDOMEmptyComponent;
 
 /***/ },
-/* 182 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -49479,7 +49743,7 @@
 	module.exports = ReactDOMFactories;
 
 /***/ },
-/* 183 */
+/* 185 */
 /***/ function(module, exports) {
 
 	/**
@@ -49502,7 +49766,7 @@
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 184 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -49541,7 +49805,7 @@
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 185 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -49815,7 +50079,7 @@
 	module.exports = ReactDOMInput;
 
 /***/ },
-/* 186 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -49943,7 +50207,7 @@
 	module.exports = ReactDOMOption;
 
 /***/ },
-/* 187 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -49961,7 +50225,7 @@
 	
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var getNodeForCharacterOffset = __webpack_require__(223);
+	var getNodeForCharacterOffset = __webpack_require__(225);
 	var getTextContentAccessor = __webpack_require__(83);
 	
 	/**
@@ -50160,7 +50424,7 @@
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 188 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -50329,7 +50593,7 @@
 	module.exports = ReactDOMTextComponent;
 
 /***/ },
-/* 189 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -50489,7 +50753,7 @@
 	module.exports = ReactDOMTextarea;
 
 /***/ },
-/* 190 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -50630,7 +50894,7 @@
 	};
 
 /***/ },
-/* 191 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -50703,7 +50967,7 @@
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 192 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -50719,24 +50983,24 @@
 	
 	'use strict';
 	
-	var BeforeInputEventPlugin = __webpack_require__(165);
-	var ChangeEventPlugin = __webpack_require__(167);
-	var DefaultEventPluginOrder = __webpack_require__(169);
-	var EnterLeaveEventPlugin = __webpack_require__(170);
-	var HTMLDOMPropertyConfig = __webpack_require__(172);
-	var ReactComponentBrowserEnvironment = __webpack_require__(175);
-	var ReactDOMComponent = __webpack_require__(179);
+	var BeforeInputEventPlugin = __webpack_require__(167);
+	var ChangeEventPlugin = __webpack_require__(169);
+	var DefaultEventPluginOrder = __webpack_require__(171);
+	var EnterLeaveEventPlugin = __webpack_require__(172);
+	var HTMLDOMPropertyConfig = __webpack_require__(174);
+	var ReactComponentBrowserEnvironment = __webpack_require__(177);
+	var ReactDOMComponent = __webpack_require__(181);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMEmptyComponent = __webpack_require__(181);
-	var ReactDOMTreeTraversal = __webpack_require__(190);
-	var ReactDOMTextComponent = __webpack_require__(188);
-	var ReactDefaultBatchingStrategy = __webpack_require__(191);
-	var ReactEventListener = __webpack_require__(194);
-	var ReactInjection = __webpack_require__(195);
-	var ReactReconcileTransaction = __webpack_require__(200);
-	var SVGDOMPropertyConfig = __webpack_require__(204);
-	var SelectEventPlugin = __webpack_require__(205);
-	var SimpleEventPlugin = __webpack_require__(206);
+	var ReactDOMEmptyComponent = __webpack_require__(183);
+	var ReactDOMTreeTraversal = __webpack_require__(192);
+	var ReactDOMTextComponent = __webpack_require__(190);
+	var ReactDefaultBatchingStrategy = __webpack_require__(193);
+	var ReactEventListener = __webpack_require__(196);
+	var ReactInjection = __webpack_require__(197);
+	var ReactReconcileTransaction = __webpack_require__(202);
+	var SVGDOMPropertyConfig = __webpack_require__(206);
+	var SelectEventPlugin = __webpack_require__(207);
+	var SimpleEventPlugin = __webpack_require__(208);
 	
 	var alreadyInjected = false;
 	
@@ -50792,7 +51056,7 @@
 	};
 
 /***/ },
-/* 193 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -50830,7 +51094,7 @@
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 194 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -50855,7 +51119,7 @@
 	var ReactUpdates = __webpack_require__(11);
 	
 	var getEventTarget = __webpack_require__(52);
-	var getUnboundedScrollPosition = __webpack_require__(113);
+	var getUnboundedScrollPosition = __webpack_require__(115);
 	
 	/**
 	 * Find the deepest React component completely containing the root of the
@@ -50992,7 +51256,7 @@
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 195 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51033,7 +51297,7 @@
 	module.exports = ReactInjection;
 
 /***/ },
-/* 196 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51049,7 +51313,7 @@
 	
 	'use strict';
 	
-	var adler32 = __webpack_require__(217);
+	var adler32 = __webpack_require__(219);
 	
 	var TAG_END = /\/?>/;
 	var COMMENT_START = /^<\!\-\-/;
@@ -51088,7 +51352,7 @@
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 197 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51113,10 +51377,10 @@
 	
 	var ReactCurrentOwner = __webpack_require__(16);
 	var ReactReconciler = __webpack_require__(19);
-	var ReactChildReconciler = __webpack_require__(174);
+	var ReactChildReconciler = __webpack_require__(176);
 	
 	var emptyFunction = __webpack_require__(8);
-	var flattenChildren = __webpack_require__(221);
+	var flattenChildren = __webpack_require__(223);
 	var invariant = __webpack_require__(1);
 	
 	/**
@@ -51544,7 +51808,7 @@
 	module.exports = ReactMultiChild;
 
 /***/ },
-/* 198 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51643,7 +51907,7 @@
 	module.exports = ReactOwner;
 
 /***/ },
-/* 199 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51690,7 +51954,7 @@
 	module.exports = ReactPureComponent;
 
 /***/ },
-/* 200 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51873,7 +52137,7 @@
 	module.exports = ReactReconcileTransaction;
 
 /***/ },
-/* 201 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51889,7 +52153,7 @@
 	
 	'use strict';
 	
-	var ReactOwner = __webpack_require__(198);
+	var ReactOwner = __webpack_require__(200);
 	
 	var ReactRef = {};
 	
@@ -51958,7 +52222,7 @@
 	module.exports = ReactRef;
 
 /***/ },
-/* 202 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51979,7 +52243,7 @@
 	var PooledClass = __webpack_require__(15);
 	var Transaction = __webpack_require__(25);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactServerUpdateQueue = __webpack_require__(203);
+	var ReactServerUpdateQueue = __webpack_require__(205);
 	
 	/**
 	 * Executed within the scope of the `Transaction` instance. Consider these as
@@ -52053,7 +52317,7 @@
 	module.exports = ReactServerRenderingTransaction;
 
 /***/ },
-/* 203 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52199,7 +52463,7 @@
 	module.exports = ReactServerUpdateQueue;
 
 /***/ },
-/* 204 */
+/* 206 */
 /***/ function(module, exports) {
 
 	/**
@@ -52506,7 +52770,7 @@
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 205 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52707,7 +52971,7 @@
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 206 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52729,17 +52993,17 @@
 	var EventListener = __webpack_require__(57);
 	var EventPropagators = __webpack_require__(22);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var SyntheticAnimationEvent = __webpack_require__(207);
-	var SyntheticClipboardEvent = __webpack_require__(208);
+	var SyntheticAnimationEvent = __webpack_require__(209);
+	var SyntheticClipboardEvent = __webpack_require__(210);
 	var SyntheticEvent = __webpack_require__(13);
-	var SyntheticFocusEvent = __webpack_require__(211);
-	var SyntheticKeyboardEvent = __webpack_require__(213);
+	var SyntheticFocusEvent = __webpack_require__(213);
+	var SyntheticKeyboardEvent = __webpack_require__(215);
 	var SyntheticMouseEvent = __webpack_require__(29);
-	var SyntheticDragEvent = __webpack_require__(210);
-	var SyntheticTouchEvent = __webpack_require__(214);
-	var SyntheticTransitionEvent = __webpack_require__(215);
+	var SyntheticDragEvent = __webpack_require__(212);
+	var SyntheticTouchEvent = __webpack_require__(216);
+	var SyntheticTransitionEvent = __webpack_require__(217);
 	var SyntheticUIEvent = __webpack_require__(24);
-	var SyntheticWheelEvent = __webpack_require__(216);
+	var SyntheticWheelEvent = __webpack_require__(218);
 	
 	var emptyFunction = __webpack_require__(8);
 	var getEventCharCode = __webpack_require__(50);
@@ -53347,7 +53611,7 @@
 	module.exports = SimpleEventPlugin;
 
 /***/ },
-/* 207 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53391,7 +53655,7 @@
 	module.exports = SyntheticAnimationEvent;
 
 /***/ },
-/* 208 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53434,7 +53698,7 @@
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 209 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53475,7 +53739,7 @@
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 210 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53516,7 +53780,7 @@
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 211 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53557,7 +53821,7 @@
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 212 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53599,7 +53863,7 @@
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 213 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53618,7 +53882,7 @@
 	var SyntheticUIEvent = __webpack_require__(24);
 	
 	var getEventCharCode = __webpack_require__(50);
-	var getEventKey = __webpack_require__(222);
+	var getEventKey = __webpack_require__(224);
 	var getEventModifierState = __webpack_require__(51);
 	
 	/**
@@ -53688,7 +53952,7 @@
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 214 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53738,7 +54002,7 @@
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 215 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53782,7 +54046,7 @@
 	module.exports = SyntheticTransitionEvent;
 
 /***/ },
-/* 216 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53841,7 +54105,7 @@
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 217 */
+/* 219 */
 /***/ function(module, exports) {
 
 	/**
@@ -53890,7 +54154,7 @@
 	module.exports = adler32;
 
 /***/ },
-/* 218 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -53983,7 +54247,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(33)))
 
 /***/ },
-/* 219 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -54067,7 +54331,7 @@
 	module.exports = dangerousStyleValue;
 
 /***/ },
-/* 220 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -54132,7 +54396,7 @@
 	module.exports = findDOMNode;
 
 /***/ },
-/* 221 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -54214,7 +54478,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(33)))
 
 /***/ },
-/* 222 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -54321,7 +54585,7 @@
 	module.exports = getEventKey;
 
 /***/ },
-/* 223 */
+/* 225 */
 /***/ function(module, exports) {
 
 	/**
@@ -54400,7 +54664,7 @@
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 224 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -54506,7 +54770,7 @@
 	module.exports = getVendorPrefixedEventName;
 
 /***/ },
-/* 225 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -54549,7 +54813,7 @@
 	module.exports = onlyChild;
 
 /***/ },
-/* 226 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -54580,7 +54844,7 @@
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 227 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -54601,7 +54865,7 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 228 */
+/* 230 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -54617,7 +54881,7 @@
 
 
 /***/ },
-/* 229 */
+/* 231 */
 /***/ function(module, exports) {
 
 	(function(self) {
@@ -55057,4 +55321,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=main.3be31069.js.map
+//# sourceMappingURL=main.5bbf4e9a.js.map
