@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class YearlyHistorical extends React.Component {
   getWinningPartyClasses(party) {
-    return (party === 'republican' && this.props.popularVote[party] > this.props.popularVote.democrat) || (party === 'democrat' && this.props.popularVote[party] > this.props.popularVote.republican) ? 'list-group-item winner' : 'list-group-item'
+    return (party === 'republican' && this.props.popularVote[party] > this.props.popularVote.democrat) || (party === 'democrat' && this.props.popularVote[party] > this.props.popularVote.republican) ? 'list-group-item list-group-item-success' : 'list-group-item'
   }
   getListItemDescript(party) {
     const candidate = this.props.candidates[party] || "Others";
@@ -24,7 +24,7 @@ export default class YearlyHistorical extends React.Component {
   }
   compareElectoralToPopular() {
     const winner = this.props.electoralVote.republican >= 270 ? 'republican' : 'democrat';
-    const totalPopularVote = this.props.popularVote.democrat + this.props.popularVote.republican;
+    const totalPopularVote = this.props.popularVote.democrat + this.props.popularVote.republican + this.props.popularVote.others;
     const totalElectoralVote = 538;
     const winningPopVoteTotal = this.props.popularVote[winner];
 
@@ -35,7 +35,7 @@ export default class YearlyHistorical extends React.Component {
     const pctElectoralGreater = (diff / winningElectoralPrct) * 100;
     return (
       <div className='list-group'>
-        <h4>Comparison</h4>
+        <h4>Vote Comparison</h4>
         <div className='list-group-item'>
           {winningElectoralPrct.toFixed(2)}% Electoral Winner
         </div>
@@ -56,17 +56,17 @@ export default class YearlyHistorical extends React.Component {
           <div className="col-xs-12 col-sm-6 col-md-4">
             <h5>Electoral Vote</h5>
             <div className="list-group">
-              <div className={this.props.electoralVote.democrat >= 270 ? 'list-group-item winner' : 'list-group-item'}>
+              <div className={this.props.electoralVote.democrat >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item'}>
                 <span className="tag tag-default tag-pill float-xs-right">{this.props.electoralVote.democrat}</span>
-                Democrat:
+                Democrat
               </div>
-              <div className={this.props.electoralVote.republican >= 270 ? 'list-group-item winner' : 'list-group-item'}>
+              <div className={this.props.electoralVote.republican >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item'}>
                 <span className="tag tag-default tag-pill float-xs-right">{this.props.electoralVote.republican}</span>
-                Republican:
+                Republican
               </div>
-              <div className={this.props.electoralVote.others >= 270 ? 'list-group-item winner' : 'list-group-item'}>
+              <div className={this.props.electoralVote.others >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item'}>
                 <span className="tag tag-default tag-pill float-xs-right">{this.props.electoralVote.others}</span>
-                Others:
+                Others
               </div>
             </div>
           </div>

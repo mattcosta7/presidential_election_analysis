@@ -40,7 +40,7 @@ export default class Analysis extends React.Component {
                 <span className="tag tag-default tag-pill float-xs-right">
                 {actualAvg}
                 </span>
-                Historical Average Electoral Deviation:
+                Historical Average Electoral Deviation
               </li>
               <li className="list-group-item">
                 <span className="tag tag-default tag-pill float-xs-right">{prop3rdAvg}</span>

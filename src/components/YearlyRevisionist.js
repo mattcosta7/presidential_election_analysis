@@ -34,14 +34,17 @@ export default class YearlyRevisionist extends React.Component {
           <h4 className="card-header">{this.props.header}</h4>
           <div className="card-block">
             <div className="card-text">
-              <div className={this.props.electoralVote.democrat >= 270 ? 'list-group-item winner' : 'list-group-item'}>
-                Democrat: <span className="tag tag-default tag-pill float-xs-right">{this.props.electoralVote.democrat.toFixed(2)}</span>
+              <div className={this.props.electoralVote.democrat >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item'}>
+                Democrat
+                <span className="tag tag-default tag-pill float-xs-right">{this.props.electoralVote.democrat.toFixed(2)}</span>
               </div>
-              <div className={this.props.electoralVote.republican >= 270 ? 'list-group-item winner' : 'list-group-item'}>
-                Republican: <span className="tag tag-default tag-pill float-xs-right">{this.props.electoralVote.republican.toFixed(2)}</span>
+              <div className={this.props.electoralVote.republican >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item'}>
+                Republican
+                <span className="tag tag-default tag-pill float-xs-right">{this.props.electoralVote.republican.toFixed(2)}</span>
               </div>
-              <div className={this.props.electoralVote.others >= 270 ? 'list-group-item winner' : 'list-group-item'}>
-                Others: <span className="tag tag-default tag-pill float-xs-right">{this.props.electoralVote.others.toFixed(2)}</span>
+              <div className={this.props.electoralVote.others >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item'}>
+                Others
+                <span className="tag tag-default tag-pill float-xs-right">{this.props.electoralVote.others.toFixed(2)}</span>
               </div>
               <div>
                 {this.compareElectoralToPopular()}
