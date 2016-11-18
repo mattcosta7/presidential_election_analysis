@@ -11462,7 +11462,7 @@
 	                  { className: 'tag tag-default tag-pill float-xs-right' },
 	                  actualAvg
 	                ),
-	                'Historical Average Electoral Deviation:'
+	                'Historical Average Electoral Deviation'
 	              ),
 	              _react2.default.createElement(
 	                'li',
@@ -11664,7 +11664,7 @@
 	            _react2.default.createElement(
 	              'h6',
 	              null,
-	              'I assume that:'
+	              'I assume'
 	            ),
 	            _react2.default.createElement(
 	              'li',
@@ -12460,7 +12460,7 @@
 	  _createClass(YearlyHistorical, [{
 	    key: 'getWinningPartyClasses',
 	    value: function getWinningPartyClasses(party) {
-	      return party === 'republican' && this.props.popularVote[party] > this.props.popularVote.democrat || party === 'democrat' && this.props.popularVote[party] > this.props.popularVote.republican ? 'list-group-item winner' : 'list-group-item';
+	      return party === 'republican' && this.props.popularVote[party] > this.props.popularVote.democrat || party === 'democrat' && this.props.popularVote[party] > this.props.popularVote.republican ? 'list-group-item list-group-item-success' : 'list-group-item';
 	    }
 	  }, {
 	    key: 'getListItemDescript',
@@ -12494,7 +12494,7 @@
 	    key: 'compareElectoralToPopular',
 	    value: function compareElectoralToPopular() {
 	      var winner = this.props.electoralVote.republican >= 270 ? 'republican' : 'democrat';
-	      var totalPopularVote = this.props.popularVote.democrat + this.props.popularVote.republican;
+	      var totalPopularVote = this.props.popularVote.democrat + this.props.popularVote.republican + this.props.popularVote.others;
 	      var totalElectoralVote = 538;
 	      var winningPopVoteTotal = this.props.popularVote[winner];
 	
@@ -12509,7 +12509,7 @@
 	        _react2.default.createElement(
 	          'h4',
 	          null,
-	          'Comparison'
+	          'Vote Comparison'
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -12558,33 +12558,33 @@
 	              { className: 'list-group' },
 	              _react2.default.createElement(
 	                'div',
-	                { className: this.props.electoralVote.democrat >= 270 ? 'list-group-item winner' : 'list-group-item' },
+	                { className: this.props.electoralVote.democrat >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item' },
 	                _react2.default.createElement(
 	                  'span',
 	                  { className: 'tag tag-default tag-pill float-xs-right' },
 	                  this.props.electoralVote.democrat
 	                ),
-	                'Democrat:'
+	                'Democrat'
 	              ),
 	              _react2.default.createElement(
 	                'div',
-	                { className: this.props.electoralVote.republican >= 270 ? 'list-group-item winner' : 'list-group-item' },
+	                { className: this.props.electoralVote.republican >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item' },
 	                _react2.default.createElement(
 	                  'span',
 	                  { className: 'tag tag-default tag-pill float-xs-right' },
 	                  this.props.electoralVote.republican
 	                ),
-	                'Republican:'
+	                'Republican'
 	              ),
 	              _react2.default.createElement(
 	                'div',
-	                { className: this.props.electoralVote.others >= 270 ? 'list-group-item winner' : 'list-group-item' },
+	                { className: this.props.electoralVote.others >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item' },
 	                _react2.default.createElement(
 	                  'span',
 	                  { className: 'tag tag-default tag-pill float-xs-right' },
 	                  this.props.electoralVote.others
 	                ),
-	                'Others:'
+	                'Others'
 	              )
 	            )
 	          ),
@@ -12804,8 +12804,8 @@
 	              { className: 'card-text' },
 	              _react2.default.createElement(
 	                'div',
-	                { className: this.props.electoralVote.democrat >= 270 ? 'list-group-item winner' : 'list-group-item' },
-	                'Democrat: ',
+	                { className: this.props.electoralVote.democrat >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item' },
+	                'Democrat',
 	                _react2.default.createElement(
 	                  'span',
 	                  { className: 'tag tag-default tag-pill float-xs-right' },
@@ -12814,8 +12814,8 @@
 	              ),
 	              _react2.default.createElement(
 	                'div',
-	                { className: this.props.electoralVote.republican >= 270 ? 'list-group-item winner' : 'list-group-item' },
-	                'Republican: ',
+	                { className: this.props.electoralVote.republican >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item' },
+	                'Republican',
 	                _react2.default.createElement(
 	                  'span',
 	                  { className: 'tag tag-default tag-pill float-xs-right' },
@@ -12824,8 +12824,8 @@
 	              ),
 	              _react2.default.createElement(
 	                'div',
-	                { className: this.props.electoralVote.others >= 270 ? 'list-group-item winner' : 'list-group-item' },
-	                'Others: ',
+	                { className: this.props.electoralVote.others >= 270 ? 'list-group-item list-group-item-success' : 'list-group-item' },
+	                'Others',
 	                _react2.default.createElement(
 	                  'span',
 	                  { className: 'tag tag-default tag-pill float-xs-right' },
@@ -28384,9 +28384,9 @@
 					"republican": 11
 				},
 				"popular": {
-					"democrat": 933655,
-					"republican": 1017166,
-					"other": 105069
+					"democrat": 1123979,
+					"republican": 1219596,
+					"other": 135381
 				}
 			},
 			"AR": {
@@ -28395,9 +28395,9 @@
 					"republican": 6
 				},
 				"popular": {
-					"democrat": 378729,
-					"republican": 677904,
-					"other": 65051
+					"democrat": 378632,
+					"republican": 681765,
+					"other": 52211
 				}
 			},
 			"CA": {
@@ -28406,9 +28406,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 5589936,
-					"republican": 3021095,
-					"other": 482896
+					"democrat": 6191799,
+					"republican": 3287273,
+					"other": 545722
 				}
 			},
 			"CO": {
@@ -28417,9 +28417,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 1208095,
-					"republican": 1136354,
-					"other": 213956
+					"democrat": 1126384,
+					"republican": 1075770,
+					"other": 208112
 				}
 			},
 			"CT": {
@@ -28461,9 +28461,9 @@
 					"republican": 29
 				},
 				"popular": {
-					"democrat": 4485745,
-					"republican": 4605515,
-					"other": 295490
+					"democrat": 4487657,
+					"republican": 4607146,
+					"other": 271108
 				}
 			},
 			"GA": {
@@ -28472,9 +28472,9 @@
 					"republican": 16
 				},
 				"popular": {
-					"democrat": 1837300,
-					"republican": 2068623,
-					"other": 123641
+					"democrat": 1856509,
+					"republican": 2078064,
+					"other": 125293
 				}
 			},
 			"HI": {
@@ -28483,9 +28483,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 251853,
-					"republican": 121648,
-					"other": 30653
+					"democrat": 266827,
+					"republican": 128815,
+					"other": 28676
 				}
 			},
 			"IA": {
@@ -28494,9 +28494,9 @@
 					"republican": 6
 				},
 				"popular": {
-					"democrat": 650790,
+					"democrat": 650780,
 					"republican": 798923,
-					"other": 29019
+					"other": 82896
 				}
 			},
 			"ID": {
@@ -28505,9 +28505,9 @@
 					"republican": 4
 				},
 				"popular": {
-					"democrat": 189677,
-					"republican": 407199,
-					"other": 91359
+					"democrat": 190971,
+					"republican": 412525,
+					"other": 83595
 				}
 			},
 			"IL": {
@@ -28516,9 +28516,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 2977498,
-					"republican": 2118179,
-					"other": 278603
+					"democrat": 2982415,
+					"republican": 2121573,
+					"other": 281345
 				}
 			},
 			"IN": {
@@ -28527,9 +28527,9 @@
 					"republican": 11
 				},
 				"popular": {
-					"democrat": 1031953,
-					"republican": 1556220,
-					"other": 133856
+					"democrat": 1024180,
+					"republican": 1544609,
+					"other": 135953
 				}
 			},
 			"KS": {
@@ -28538,9 +28538,9 @@
 					"republican": 6
 				},
 				"popular": {
-					"democrat": 414788,
-					"republican": 656009,
-					"other": 76346
+					"democrat": 414572,
+					"republican": 656470,
+					"other": 76365
 				}
 			},
 			"KY": {
@@ -28571,9 +28571,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 1964768,
-					"republican": 1083069,
-					"other": 183694
+					"democrat": 1967667,
+					"republican": 1084400,
+					"other": 183715
 				}
 			},
 			"MD": {
@@ -28582,9 +28582,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 1497951,
-					"republican": 873646,
-					"other": 102946
+					"democrat": 1502820,
+					"republican": 878615,
+					"other": 108189
 				}
 			},
 			"ME": {
@@ -28593,9 +28593,9 @@
 					"republican": 1
 				},
 				"popular": {
-					"democrat": 354873,
-					"republican": 334838,
-					"other": 51839
+					"democrat": 352156,
+					"republican": 332418,
+					"other": 51759
 				}
 			},
 			"MI": {
@@ -28604,9 +28604,9 @@
 					"republican": 16
 				},
 				"popular": {
-					"democrat": 2267798,
-					"republican": 2279221,
-					"other": 242874
+					"democrat": 2264807,
+					"republican": 2277914,
+					"other": 224455
 				}
 			},
 			"MN": {
@@ -28615,9 +28615,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 1366676,
-					"republican": 1322891,
-					"other": 226837
+					"democrat": 1364067,
+					"republican": 1321120,
+					"other": 203059
 				}
 			},
 			"MO": {
@@ -28637,9 +28637,9 @@
 					"republican": 6
 				},
 				"popular": {
-					"democrat": 462001,
-					"republican": 678457,
-					"other": 22529
+					"democrat": 462127,
+					"republican": 678284,
+					"other": 17412
 				}
 			},
 			"MT": {
@@ -28648,9 +28648,9 @@
 					"republican": 3
 				},
 				"popular": {
-					"democrat": 174521,
-					"republican": 274120,
-					"other": 36468
+					"democrat": 174281,
+					"republican": 273879,
+					"other": 35773
 				}
 			},
 			"NC": {
@@ -28659,9 +28659,9 @@
 					"republican": 15
 				},
 				"popular": {
-					"democrat": 2162074,
-					"republican": 2339603,
-					"other": 127794
+					"democrat": 2162822,
+					"republican": 2339830,
+					"other": 128832
 				}
 			},
 			"ND": {
@@ -28681,9 +28681,9 @@
 					"republican": 5
 				},
 				"popular": {
-					"democrat": 273858,
-					"republican": 485819,
-					"other": 45961
+					"democrat": 273185,
+					"republican": 485372,
+					"other": 45914
 				}
 			},
 			"NH": {
@@ -28692,9 +28692,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 348126,
-					"republican": 345598,
-					"other": 37578
+					"democrat": 348497,
+					"republican": 345810,
+					"other": 36994
 				}
 			},
 			"NJ": {
@@ -28703,9 +28703,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 2021756,
-					"republican": 1535513,
-					"other": 117624
+					"democrat": 1967444,
+					"republican": 1509688,
+					"other": 108570
 				}
 			},
 			"NM": {
@@ -28714,9 +28714,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 380724,
-					"republican": 315875,
-					"other": 92242
+					"democrat": 380923,
+					"republican": 316134,
+					"other": 89550
 				}
 			},
 			"NV": {
@@ -28736,9 +28736,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 4143874,
-					"republican": 2640570,
-					"other": 261731
+					"democrat": 4145376,
+					"republican": 2638135,
+					"other": 262383
 				}
 			},
 			"OH": {
@@ -28747,9 +28747,9 @@
 					"republican": 18
 				},
 				"popular": {
-					"democrat": 2317001,
-					"republican": 2771984,
-					"other": 236410
+					"democrat": 2320596,
+					"republican": 2776683,
+					"other": 212909
 				}
 			},
 			"OK": {
@@ -28769,9 +28769,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 934631,
-					"republican": 742506,
-					"other": 131438
+					"democrat": 949319,
+					"republican": 751438,
+					"other": 139710
 				}
 			},
 			"PA": {
@@ -28780,9 +28780,9 @@
 					"republican": 20
 				},
 				"popular": {
-					"democrat": 2844705,
-					"republican": 2912941,
-					"other": 212461
+					"democrat": 2817409,
+					"republican": 2890633,
+					"other": 192156
 				}
 			},
 			"RI": {
@@ -28791,9 +28791,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 249902,
-					"republican": 179421,
-					"other": 21464
+					"democrat": 227062,
+					"republican": 166454,
+					"other": 20856
 				}
 			},
 			"SC": {
@@ -28802,9 +28802,9 @@
 					"republican": 9
 				},
 				"popular": {
-					"democrat": 849469,
-					"republican": 1143611,
-					"other": 91364
+					"democrat": 850629,
+					"republican": 1147045,
+					"other": 83254
 				}
 			},
 			"SD": {
@@ -28824,9 +28824,9 @@
 					"republican": 11
 				},
 				"popular": {
-					"democrat": 867110,
-					"republican": 1517402,
-					"other": 100179
+					"democrat": 868853,
+					"republican": 1519926,
+					"other": 86238
 				}
 			},
 			"TX": {
@@ -28846,9 +28846,9 @@
 					"republican": 6
 				},
 				"popular": {
-					"democrat": 237241,
-					"republican": 397004,
-					"other": 218216
+					"democrat": 222858,
+					"republican": 375006,
+					"other": 248125
 				}
 			},
 			"VA": {
@@ -28857,9 +28857,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 1916845,
-					"republican": 1731156,
-					"other": 196786
+					"democrat": 1916148,
+					"republican": 1729932,
+					"other": 198770
 				}
 			},
 			"VT": {
@@ -28868,9 +28868,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 178117,
-					"republican": 95050,
-					"other": 18174
+					"democrat": 178082,
+					"republican": 95114,
+					"other": 16832
 				}
 			},
 			"WA": {
@@ -28879,9 +28879,9 @@
 					"republican": 0
 				},
 				"popular": {
-					"democrat": 1364934,
-					"republican": 950710,
-					"other": 168647
+					"democrat": 1210824,
+					"republican": 831631,
+					"other": 211489
 				}
 			},
 			"WI": {
@@ -28890,9 +28890,9 @@
 					"republican": 10
 				},
 				"popular": {
-					"democrat": 1382210,
-					"republican": 1409467,
-					"other": 152943
+					"democrat": 1383926,
+					"republican": 1411432,
+					"other": 137486
 				}
 			},
 			"WV": {
@@ -28901,9 +28901,9 @@
 					"republican": 5
 				},
 				"popular": {
-					"democrat": 187457,
-					"republican": 486198,
-					"other": 34571
+					"democrat": 187519,
+					"republican": 486304,
+					"other": 30814
 				}
 			},
 			"WY": {
@@ -28912,9 +28912,9 @@
 					"republican": 3
 				},
 				"popular": {
-					"democrat": 55949,
-					"republican": 174248,
-					"other": 18545
+					"democrat": 55964,
+					"republican": 174383,
+					"other": 15767
 				}
 			}
 		}
@@ -55321,4 +55321,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=main.5bbf4e9a.js.map
+//# sourceMappingURL=main.ffe60d8a.js.map
