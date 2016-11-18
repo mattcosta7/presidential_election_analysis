@@ -51,8 +51,8 @@ export default class YearlyHistorical extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="row">
-          <h4>Historical Vote</h4>
+        <div>
+          <h4 className='col-xs-12'>Historical Vote</h4>
           <div className="col-xs-12 col-sm-6 col-md-4">
             <h5>Electoral Vote</h5>
             <div className="list-group">

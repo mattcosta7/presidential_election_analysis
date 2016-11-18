@@ -31,11 +31,17 @@ export default class Analysis extends React.Component {
 
     return (
       <div>
-        <h3>Historical Deviation Trends</h3>
+        <h2>Historical Deviation Trends</h2>
         <div className="row">
           <div className="col-sm-2"></div>
             <div className="col-sm-8">
             <ul className="list-group">
+              <li className="list-group-item">
+                <span className="float-xs-right">
+                  %more electoral
+                </span>
+                Vote type
+              </li>
               <li className="list-group-item">
                 <span className="tag tag-default tag-pill float-xs-right">
                 {actualAvg}
@@ -104,7 +110,7 @@ export default class Analysis extends React.Component {
           />
           <h4>Revised Votes</h4>
           <YearlyRevisionist
-            header="3rd Party Full Proportional"
+            header="3+ Party Proportional"
             electoralVote={election.results.electoral.proportionalWithThirdParty}
             popularVote={election.results.popular.actual}
           />
@@ -114,7 +120,7 @@ export default class Analysis extends React.Component {
             popularVote={election.results.popular.actual}
           />
           <YearlyRevisionist
-            header="3rd Party Electoral Bonus"
+            header="3+ Party Electoral Bonus"
             electoralVote={election.results.electoral.withElectoralBonus3rd}
             popularVote={election.results.popular.actual}
           />

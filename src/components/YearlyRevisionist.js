@@ -49,7 +49,9 @@ export default class YearlyRevisionist extends React.Component {
               <div>
                 {this.compareElectoralToPopular()}
               </div>
-              {this.props.children}
+              <p>
+                {this.props.children}
+              </p>
             </div>
           </div>
         </div>

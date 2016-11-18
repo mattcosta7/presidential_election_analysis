@@ -4,7 +4,7 @@ export default class Conclusion extends React.Component {
   render() {
     return (
       <div>
-        <h3>Conclusion</h3>
+        <h2>Conclusion</h2>
         <p>
           By allocating 100% of a state's electoral votes to the winning candidate, and even rewarding the winner with only a few additional votes compared to the popular vote outcome in the state, the electoral system vastly overvalues certain votes, and the results do not accurately represent the will of the people.
         </p>

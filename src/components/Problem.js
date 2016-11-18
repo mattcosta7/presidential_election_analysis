@@ -4,9 +4,9 @@ export default class Problem extends React.Component {
   render() {
     return (
       <div>
-        <h3>
+        <h2>
           Problem
-        </h3>
+        </h2>
         <div>
           <p>
             A few issues seem to arise, when alocating votes in this winner take all manner

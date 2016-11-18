@@ -4,7 +4,7 @@ export default class YearlyAnalysis extends React.Component {
   render() {
     return (
       <div>
-        {this.props.commentary.body}
+        <p>{this.props.commentary.body}</p>
       </div>
     );
   }

@@ -4,7 +4,10 @@ export default class Histry extends React.Component {
   render() {
     return (
       <div>
-        Electoral College History in brief
+        <h2>History of the Electoral College</h2>
+        <p>
+
+        </p>
       </div>
     );
   }

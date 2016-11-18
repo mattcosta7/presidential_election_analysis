@@ -4,7 +4,7 @@ export default class Assumptions extends React.Component {
   render() {
     return (
       <div>
-        <h3>Assumptions</h3>
+        <h2>Assumptions</h2>
         <div>
           <p>
             The foundations of this article are built upon a couple assumptions. These are not necessarily items I agree with, or disagree with, but instead chose to deal with as immutable to narrow the scope of the issue. Additionally, I do not intend to disucss the correctness of any candidate or party, this attempts instead to analyze the separation of votes by their types in these elections. The starting point, 1964 is the first election that allocated 538 total electoral votes.

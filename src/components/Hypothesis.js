@@ -4,9 +4,9 @@ export default class Hypothesis extends React.Component {
   render() {
     return (
       <div>
-        <h3>
+        <h2>
           Hypothesis
-        </h3>
+        </h2>
         <p>
           By more proportionally splitting electoral votes between candidates, election results become more representative of the people's desires, tightens races, and creates an environment where voters feel more empowered
         </p>
